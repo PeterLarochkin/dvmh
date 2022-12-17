@@ -281,64 +281,64 @@ void getB() {
             }
         }
 
-        #pragma dvm parallel([i] on B[i][0])
-        for (i = 0; i < M; ++i) {
-            if (i >= 1) {
-                // it's (10) equations
-                // i=1,M-1
-                // bottom applying
+        // #pragma dvm parallel([i] on B[i][0])
+        // for (i = 0; i < M; ++i) {
+        //     if (i >= 1) {
+        //         // it's (10) equations
+        //         // i=1,M-1
+        //         // bottom applying
                 
-                B[i][0] = psi(A1+ i*h1, B1+ 0*h2) * 2/h2 + F(A1 + i*h1, B1 + 0*h2);
-            } else if (i == 0){  
-                // remaining corner points
-                // bottom left
-                // it's (11) equation
-                B[i][0] = psi(A1+ 0*h1, B1+ 0*h2) * (2/h1 + 2/h2) + F(A1 + 0*h1, B1 + 0*h2);
-            }
-        }
+        //         B[i][0] = psi(A1+ i*h1, B1+ 0*h2) * 2/h2 + F(A1 + i*h1, B1 + 0*h2);
+        //     } else if (i == 0){  
+        //         // remaining corner points
+        //         // bottom left
+        //         // it's (11) equation
+        //         B[i][0] = psi(A1+ 0*h1, B1+ 0*h2) * (2/h1 + 2/h2) + F(A1 + 0*h1, B1 + 0*h2);
+        //     }
+        // }
 
-        #pragma dvm parallel([i] on B[i][N])
-        for (i = 1; i <= M; ++i) {
-            if (i < M){
-                // it's (10) equations
-                // i=1,M-1
-                // top applying
-                B[i][N] = psi(A1+ i*h1, B1+ N*h2) * 2/h2 + F(A1 + i*h1, B1 + N*h2);
-            } else if (i == M) {
+        // #pragma dvm parallel([i] on B[i][N])
+        // for (i = 1; i <= M; ++i) {
+        //     if (i < M){
+        //         // it's (10) equations
+        //         // i=1,M-1
+        //         // top applying
+        //         B[i][N] = psi(A1+ i*h1, B1+ N*h2) * 2/h2 + F(A1 + i*h1, B1 + N*h2);
+        //     } else if (i == M) {
       
-            // it's (13) equation
-            // top right
-                B[i][N] = psi(A1+ M*h1, B1+ N*h2) * (2/h1 + 2/h2) + F(A1 + M*h1, B1 + N*h2);
-            }
-        }
+        //     // it's (13) equation
+        //     // top right
+        //         B[i][N] = psi(A1+ M*h1, B1+ N*h2) * (2/h1 + 2/h2) + F(A1 + M*h1, B1 + N*h2);
+        //     }
+        // }
 
-        #pragma dvm parallel([j] on B[0][j])
-        for (j = 1; j <= N; ++j) {
-            if (j < N) {
-                // it's (9) equations
-                // j=1,N-1
-                // left applying
-                B[0][j] = psi(A1+ 0*h1, B1+ j*h2) * 2/h1 + F(A1 + 0*h1, B1 + j*h2);
-            } else if (j == N){
-                // it's (14) equation
-                // top left
-                B[0][j] = psi(A1+ 0*h1, B1+ N*h2) * (2/h1 + 2/h2) + F(A1 + 0*h1, B1 + N*h2);
-            }
-        }
+        // #pragma dvm parallel([j] on B[0][j])
+        // for (j = 1; j <= N; ++j) {
+        //     if (j < N) {
+        //         // it's (9) equations
+        //         // j=1,N-1
+        //         // left applying
+        //         B[0][j] = psi(A1+ 0*h1, B1+ j*h2) * 2/h1 + F(A1 + 0*h1, B1 + j*h2);
+        //     } else if (j == N){
+        //         // it's (14) equation
+        //         // top left
+        //         B[0][j] = psi(A1+ 0*h1, B1+ N*h2) * (2/h1 + 2/h2) + F(A1 + 0*h1, B1 + N*h2);
+        //     }
+        // }
 
-        #pragma dvm parallel([j] on B[M][j])
-        for (j = 0; j < N; ++j) {
-            if (j >=  1) {
-                // it's (9) equations
-                // j=1,N-1
-                // right applying
-                B[M][j] = psi(A1+ M*h1, B1+ j*h2) * 2/h1 + F(A1 + M*h1, B1 + j*h2);
-            } else if (j == 0) {
-                // it's (12) equation
-                // bottom right
-                B[M][j] = psi(A1+ M*h1, B1+ 0*h2) * (2/h1 + 2/h2) + F(A1 + M*h1, B1 + 0*h2);
-            }
-        }
+        // #pragma dvm parallel([j] on B[M][j])
+        // for (j = 0; j < N; ++j) {
+        //     if (j >=  1) {
+        //         // it's (9) equations
+        //         // j=1,N-1
+        //         // right applying
+        //         B[M][j] = psi(A1+ M*h1, B1+ j*h2) * 2/h1 + F(A1 + M*h1, B1 + j*h2);
+        //     } else if (j == 0) {
+        //         // it's (12) equation
+        //         // bottom right
+        //         B[M][j] = psi(A1+ M*h1, B1+ 0*h2) * (2/h1 + 2/h2) + F(A1 + M*h1, B1 + 0*h2);
+        //     }
+        // }
     }
 }
 
