@@ -464,6 +464,7 @@ int main(/*int argc, char** argv*/) {
         //minus(omega, tau_r, omega_next, M, N);
         #pragma dvm region
         {
+            #pragma dvm parallel([i][j] on omega_next[i][j])
             for (i = 0; i <= M; ++i) {
                 for (j = 0; j <= N; ++j) {
                     omega_next[i][j] = omega[i][j] - r[i][j]*tau;
