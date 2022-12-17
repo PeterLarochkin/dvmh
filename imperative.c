@@ -427,8 +427,8 @@ int main(/*int argc, char** argv*/) {
         // minus(omega, tau_r, omega_next, M, N);
         #pragma dvm region
         {
-            for (size_t i = 0; i <= M; ++i) {
-                for (size_t j = 0; j <= N; ++j) {
+            for (i = 0; i <= M; ++i) {
+                for (j = 0; j <= N; ++j) {
                     omega_next[i][j] = omega[i][j] - r[i][j]*tau;
                 }
             }
@@ -441,7 +441,7 @@ int main(/*int argc, char** argv*/) {
     dvmh_barrier();
     end = dvmh_wtime();
     
-    size_t i, j;
+    
     double max_ = 0.0;
     #pragma dvm actual(max_)
     #pragma dvm region
