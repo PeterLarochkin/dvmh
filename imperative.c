@@ -286,14 +286,15 @@ void getB() {
                 // it's (10) equations
                 // i=1,M-1
                 // bottom applying
-                
-                B[i][0] = psi(A1 + i*h1, B1 /*+ 0*h2*/) * 2/h2 + F(A1 + i * h1, B1 /*+ 0*h2*/);
+                // double h1 = 4.0/M;
+                // double h2 = 3.0/N;
+                B[i][0] = psi(A1 + i*(4.0/M /*h1*/), B1 /*+ 0*h2*/) * 2/(3.0/N /*h2*/) + F(A1 + i * (4.0/M /*h1*/), B1 /*+ 0*h2*/);
             } 
             else if (i == 0){  
                 // remaining corner points
                 // bottom left
                 // it's (11) equation
-                B[i][0] = psi(A1 /*+ 0*h1*/, B1 /*+ 0*h2*/) * (2/h1 + 2/h2) + F(A1 /* + 0*h1*/, B1 /*+ 0*h2*/);
+                B[i][0] = psi(A1 /*+ 0*h1*/, B1 /*+ 0*h2*/) * (2/(4.0/M /*h1*/) + 2/(3.0/N /*h2*/)) + F(A1 /* + 0*h1*/, B1 /*+ 0*h2*/);
             }
         }
 
