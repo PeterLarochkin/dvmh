@@ -31,17 +31,17 @@ double omega[M + 1][N + 1];
 #pragma dvm array align([i][j] with B[i][j])
 double tau_r[M + 1][N + 1];
 
-// double q(double x, double y) {
-//     return x + y;
-// }
+double q(double x, double y) {
+    return x + y;
+}
 
-// double u(double x, double y) {
-//     return sqrt(4+x*y);
-// }
-// double F(double x, double y) {
-//     double u = sqrt(4+x*y);
-//     return 1/(4*u*u*u)*(x*x + y*y) + (x + y)*u;
-// }
+double u(double x, double y) {
+    return sqrt(4+x*y);
+}
+double F(double x, double y) {
+    double u_ = sqrt(4+x*y);
+    return 1/(4*u_*u_*u_)*(x*x + y*y) + (x + y)*u_;
+}
 
 // double psi(double x, double y) {
     
