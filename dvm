@@ -1,6 +1,6 @@
 #!/bin/sh
 
-dvmdir='/dvm_sys'
+dvmdir='/polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys'
 export dvmbuild='Version 5.0, revision 8114, platform POLUS, build 37'
 
 #--------------- One can customize compiler options:
