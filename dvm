@@ -1,0 +1,36 @@
+#!/bin/sh
+
+dvmdir='/polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys'
+export dvmbuild='Version 5.0, revision 8114, platform POLUS, build 37'
+
+#--------------- One can customize compiler options:
+# export PCC='mpicc -O3 -fopenmp' # C compiler
+export PCC='mpixlc -qstrict -Ofast'
+# export PCXX='mpic++ -g -O3 -fopenmp ' # C++ compiler
+# export PFORT='mpif77 -g -O3 -fopenmp ' # Fortran compiler
+# export NVCC='/usr/local/cuda/bin/nvcc -arch=sm_60 -DHAVE_EXPLICIT_CAST -DPGI_COMPILE_BITCODE -DHAVE_EXPLICIT_CAST' # NVIDIA CUDA C++ compiler
+
+#--------------- One can add libraries (additional linker flags):
+# export USER_LIBS=''
+
+#--------------- One can set launch options:
+# export dvmwait=0 # Wait for task completion
+export DVMH_PPN='1' # Number of processes per node
+# export DVMH_STACKSIZE='' # Stack size to set for the task
+export DVMH_NUM_THREADS='1' # Number of CPU threads per process
+export DVMH_NUM_CUDAS='0' # Number of GPUs per process
+# export DVMH_CPU_PERF='' # Performance of all cores of CPU per process
+# export DVMH_CUDAS_PERF='' # Performance of each GPU per device
+# export DVMH_NO_DIRECT_COPY=0 # Use standard cudaMemcpy functions instead of direct copying with GPU
+# export DVMH_SPECIALIZE_RTC=1 # Use specialization algorithm to reduce CUDA kernel's resources / or compile kernels during execution without changes
+# export DVMH_EXCLUSIVE=0 # Use exclusive running mode on LSF
+
+#--------------- Debugging options:
+# export DVMH_LOGLEVEL=3 # Levels of debugging: 1 - errors only, 2 - warning, 3 - info, 4 - debug, 5 - trace
+# export DVMH_LOGFILE='dvmh_%d.log' # Log file name for each process
+# export DVMH_COMPARE_DEBUG=0 # An alternative way to turn comparative debugging mode on
+# export dvmsave=0 # Save convertation results
+# export dvmshow=0 # Show commands executed by the DVM driver
+export dvmcopy=0
+
+exec "$dvmdir/bin/dvm_drv" "$@"
