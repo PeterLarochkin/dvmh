@@ -349,21 +349,21 @@ double ro(int index, int M_or_N) {
     }
 }
 
-// double scalarProduct_A_r_to_r() {
-//     size_t i, j;
-//     double sum_ = 0.0;
-//     #pragma dvm actual(s)
-//     #pragma dvm region
-//     {
-//         #pragma dvm parallel([i][j] on A_r[i][j]) reduction(sum(sum_))
-//         for (i = 0; i < M + 1; ++i) {
-//             for (j = 0; j < N + 1; ++j) {
-//                 sum_ += h1 * h2 * ro(i, M)*ro(j, N) * A_r[i][j] * r[i][j];
-//             }
-//         }
-//     }
-//     return sum_;
-// }
+double scalarProduct_A_r_to_r() {
+    size_t i, j;
+    double sum_ = 0.0;
+    #pragma dvm actual(s)
+    #pragma dvm region
+    {
+        #pragma dvm parallel([i][j] on A_r[i][j]) reduction(sum(sum_))
+        for (i = 0; i < M + 1; ++i) {
+            for (j = 0; j < N + 1; ++j) {
+                sum_ += h1 * h2 * ro(i, M)*ro(j, N) * A_r[i][j] * r[i][j];
+            }
+        }
+    }
+    return sum_;
+}
 
 // double scalarProduct_A_r_to_A_r() {
 //     size_t i, j;
