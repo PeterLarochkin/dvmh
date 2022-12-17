@@ -289,12 +289,13 @@ void getB() {
                 // bottom applying
                 
                 B[i][0] = psi(A1+ i*h1, B1+ 0*h2) * 2/h2 + F(A1 + i*h1, B1 + 0*h2);
-            } else if (i == 0){  
-                // remaining corner points
-                // bottom left
-                // it's (11) equation
-                B[i][0] = psi(A1+ 0*h1, B1+ 0*h2) * (2/h1 + 2/h2) + F(A1 + 0*h1, B1 + 0*h2);
-            }
+            } 
+            // else if (i == 0){  
+            //     // remaining corner points
+            //     // bottom left
+            //     // it's (11) equation
+            //     B[i][0] = psi(A1+ 0*h1, B1+ 0*h2) * (2/h1 + 2/h2) + F(A1 + 0*h1, B1 + 0*h2);
+            // }
         }
 
         // #pragma dvm parallel([i] on B[i][N])
