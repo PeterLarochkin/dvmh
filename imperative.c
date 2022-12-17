@@ -43,42 +43,42 @@ double F(double x, double y) {
     return 1/(4*u_*u_*u_)*(x*x + y*y) + (x + y)*u_;
 }
 
-// double psi(double x, double y) {
+double psi(double x, double y) {
     
-//     if (x == A2 && B1<y && y<B2) {
-//         // 1
-//         double u_ = sqrt(4.0+x*y);
-//         return y/(2*u_)+u_;
-//     } else if (x == A1 && B1<y && y<B2) {
-//         // 2
-//         return -y/4+2;
-//     } else if (y==B2 && A1<x && x<A2) {
-//         // 3
-//         double u_ = sqrt(4.0+x*y);
-//         return x/(2*u_)+u_;
-//     } else if (y==B1 && A1<x && x<A2) {
-//         // 4
-//         return -x/4+2;
+    if (x == A2 && B1<y && y<B2) {
+        // 1
+        double u_ = sqrt(4.0+x*y);
+        return y/(2*u_)+u_;
+    } else if (x == A1 && B1<y && y<B2) {
+        // 2
+        return -y/4+2;
+    } else if (y==B2 && A1<x && x<A2) {
+        // 3
+        double u_ = sqrt(4.0+x*y);
+        return x/(2*u_)+u_;
+    } else if (y==B1 && A1<x && x<A2) {
+        // 4
+        return -x/4+2;
 
-//     } else if (x==A1 && y==B1 ) {
+    } else if (x==A1 && y==B1 ) {
         
-//         return (h1*(-x/4+2) + h2*(-y/4+2)) / (h1 + h2);
-//     } else if (x==A1 && y==B2 ) {
+        return (h1*(-x/4+2) + h2*(-y/4+2)) / (h1 + h2);
+    } else if (x==A1 && y==B2 ) {
         
-//         double u = sqrt(4.0+x*y);
-//         return (h1*(x/(2*u)+u) + h2*(-y/4+2)) / (h1 + h2);
-//     } else if (x==A2 && y==B1 ) {
-//         double u = sqrt(4.0+x*y);
-//         return (h1*(-x/4+2) + h2*(y/(2*u)+u)) / (h1 + h2);
-//     } else /* if (x==A2 && y==B2 )*/ {
-//         double u = sqrt(4.0+x*y);
-//         return (h1*(x/(2*u)+u) + h2*(y/(2*u)+u)) / (h1 + h2);
-//     }
-//     /* 
-//     else {
-//         printf("ERROR:(%.10f, %.10f)", x, y);
-//     } */ 
-// }
+        double u = sqrt(4.0+x*y);
+        return (h1*(x/(2*u)+u) + h2*(-y/4+2)) / (h1 + h2);
+    } else if (x==A2 && y==B1 ) {
+        double u = sqrt(4.0+x*y);
+        return (h1*(-x/4+2) + h2*(y/(2*u)+u)) / (h1 + h2);
+    } else /* if (x==A2 && y==B2 )*/ {
+        double u = sqrt(4.0+x*y);
+        return (h1*(x/(2*u)+u) + h2*(y/(2*u)+u)) / (h1 + h2);
+    }
+    /* 
+    else {
+        printf("ERROR:(%.10f, %.10f)", x, y);
+    } */ 
+}
 
 
 // void applyA_to_omega() {
