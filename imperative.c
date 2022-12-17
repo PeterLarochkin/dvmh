@@ -472,8 +472,8 @@ int main(/*int argc, char** argv*/) {
             }
         }
         // // squared_difference = scalarProduct(tau_r, tau_r, M, N, h1, h2);
-        // squared_difference = scalarProduct_tau_r_to_tau_r();
-        // count++;
+        squared_difference = scalarProduct_tau_r_to_tau_r();
+        count++;
     }
     
     // dvmh_barrier();
