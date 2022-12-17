@@ -432,48 +432,48 @@ int main(/*int argc, char** argv*/) {
     getB();
 
     int count = 0;
-    // while (squared_difference >= sq_eps)
-    // {
-    //     #pragma dvm region
-    //     {
-    //         #pragma dvm parallel([i][j] on omega[i][j])
-    //         for (size_t i = 0; i <= M; ++i) {
-    //             for (size_t j = 0; j <= N; ++j) {
-    //                 omega[i][j] = omega_next[i][j];
-    //             }
-    //         }
-    //     }
+    while (squared_difference >= sq_eps)
+    {
+        #pragma dvm region
+        {
+            #pragma dvm parallel([i][j] on omega[i][j])
+            for (size_t i = 0; i <= M; ++i) {
+                for (size_t j = 0; j <= N; ++j) {
+                    omega[i][j] = omega_next[i][j];
+                }
+            }
+        }
         
-    //     // applyA(omega, A_omega, M, N, h1, h2, A1, B1);
-    //     applyA_to_omega();
-    //     #pragma dvm region
-    //     {
-    //     // minus(A_omega, B, r, M, N);
-    //         #pragma dvm parallel([i][j] on r[i][j])
-    //         for (i = 0; i <= M; ++i) {
-    //             for (j = 0; j <= N; ++j) {
-    //                 r[i][j] = A_omega[i][j] - B[i][j];
-    //             }
-    //         }
-    //     }
-    //     // applyA(r, A_r, M, N, h1, h2, A1, B1);
-    //     applyA_to_r();
-    //     // tau = scalarProduct(A_r, r, M, N, h1, h2) / scalarProduct(A_r, A_r, M, N, h1, h2);
-    //     tau = scalarProduct_A_r_to_r()/scalarProduct_A_r_to_A_r();
-    //     // multiplyByNum(r, tau, tau_r, M, N); tau_r = tau * r
-    //     // minus(omega, tau_r, omega_next, M, N);
-    //     #pragma dvm region
-    //     {
-    //         for (i = 0; i <= M; ++i) {
-    //             for (j = 0; j <= N; ++j) {
-    //                 omega_next[i][j] = omega[i][j] - r[i][j]*tau;
-    //             }
-    //         }
-    //     }
-    //     // squared_difference = scalarProduct(tau_r, tau_r, M, N, h1, h2);
-    //     squared_difference = scalarProduct_tau_r_to_tau_r();
-    //     count++;
-    // }
+        // // applyA(omega, A_omega, M, N, h1, h2, A1, B1);
+        // applyA_to_omega();
+        // #pragma dvm region
+        // {
+        // // minus(A_omega, B, r, M, N);
+        //     #pragma dvm parallel([i][j] on r[i][j])
+        //     for (i = 0; i <= M; ++i) {
+        //         for (j = 0; j <= N; ++j) {
+        //             r[i][j] = A_omega[i][j] - B[i][j];
+        //         }
+        //     }
+        // }
+        // // applyA(r, A_r, M, N, h1, h2, A1, B1);
+        // applyA_to_r();
+        // // tau = scalarProduct(A_r, r, M, N, h1, h2) / scalarProduct(A_r, A_r, M, N, h1, h2);
+        // tau = scalarProduct_A_r_to_r()/scalarProduct_A_r_to_A_r();
+        // // multiplyByNum(r, tau, tau_r, M, N); tau_r = tau * r
+        // // minus(omega, tau_r, omega_next, M, N);
+        // #pragma dvm region
+        // {
+        //     for (i = 0; i <= M; ++i) {
+        //         for (j = 0; j <= N; ++j) {
+        //             omega_next[i][j] = omega[i][j] - r[i][j]*tau;
+        //         }
+        //     }
+        // }
+        // // squared_difference = scalarProduct(tau_r, tau_r, M, N, h1, h2);
+        // squared_difference = scalarProduct_tau_r_to_tau_r();
+        // count++;
+    }
     
     // dvmh_barrier();
     // end = dvmh_wtime();
