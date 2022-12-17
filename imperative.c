@@ -1,6 +1,5 @@
-#include <stdio.h>          /* printf */
-#include <string.h>         /* strcspn */
-#include <stdlib.h>         /* strtol */
+#include <stdlib.h>
+#include <stdio.h>
 #include <math.h>
 
 
