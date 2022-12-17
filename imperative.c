@@ -281,7 +281,7 @@ void getB() {
             }
         }
 
-        #pragma dvm parallel([i][j] on B[i][j])
+        #pragma dvm parallel([i] on B[i][0])
         for (i = 0; i < M; ++i) {
             if (i >= 1) {
                 // it's (10) equations
@@ -297,7 +297,7 @@ void getB() {
             }
         }
 
-        #pragma dvm parallel([i][j] on B[i][j])
+        #pragma dvm parallel([i] on B[i][N])
         for (i = 1; i <= M; ++i) {
             if (i < M){
                 // it's (10) equations
@@ -312,7 +312,7 @@ void getB() {
             }
         }
 
-        #pragma dvm parallel([i][j] on B[i][j])
+        #pragma dvm parallel([j] on B[0][j])
         for (j = 1; j <= N; ++j) {
             if (j < N) {
                 // it's (9) equations
@@ -326,7 +326,7 @@ void getB() {
             }
         }
 
-        #pragma dvm parallel([i][j] on B[i][j])
+        #pragma dvm parallel([j] on B[M][j])
         for (j = 0; j < N; ++j) {
             if (j >=  1) {
                 // it's (9) equations
