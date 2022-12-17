@@ -407,27 +407,27 @@ double scalarProduct_tau_r_to_tau_r() {
 ////
 
 int main(/*int argc, char** argv*/) {
-    // double sq_eps = epsilon * epsilon;
-    // double squared_difference = sq_eps;
-    // double start = dvmh_wtime(); 
-    // double end = 0.0;
-    // size_t i, j;
+    double sq_eps = epsilon * epsilon;
+    double squared_difference = sq_eps;
+    double start = dvmh_wtime(); 
+    double end = 0.0;
+    size_t i, j;
 
-    // #pragma dvm region
-    // {
-    //     #pragma dvm parallel([i][j] on omega_next[i][j])
-    //     for (i = 0; i <= M; ++i) {
-    //         for (j = 0; j <= N; ++j) {
-    //             // omega[i][j] = 0.0;
-    //             omega_next[i][j] = 2.0;
-    //             // B[i][j] = 0.0;
-    //             // A_omega[i][j] = 0.0;
-    //             // r[i][j] = 0.0;
-    //             // A_r[i][j] = 0.0;
-    //             // tau_r[i][j] = 0.0;
-    //         }
-    //     }
-    // }
+    #pragma dvm region
+    {
+        #pragma dvm parallel([i][j] on omega_next[i][j])
+        for (i = 0; i <= M; ++i) {
+            for (j = 0; j <= N; ++j) {
+                // omega[i][j] = 0.0;
+                omega_next[i][j] = 2.0;
+                // B[i][j] = 0.0;
+                // A_omega[i][j] = 0.0;
+                // r[i][j] = 0.0;
+                // A_r[i][j] = 0.0;
+                // tau_r[i][j] = 0.0;
+            }
+        }
+    }
 
     // getB();
 
