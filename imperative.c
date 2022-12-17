@@ -429,9 +429,9 @@ int main(/*int argc, char** argv*/) {
         }
     }
 
-    // getB();
+    getB();
 
-    // int count = 0;
+    int count = 0;
     // while (squared_difference >= sq_eps)
     // {
     //     #pragma dvm region
