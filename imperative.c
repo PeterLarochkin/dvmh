@@ -99,75 +99,76 @@ void applyA_to_omega() {
         }
 
         #pragma dvm parallel([i] on A_omega[i][0]) shadow_renew(omega)
-        for (i = 1; i < M; ++i) {
-            // it's (10) equations
-            // i=1,M-1
-            // bottom applying
-            A_omega[i][0] = -2/(h2*h2) * (omega[i][1] - omega[i][0]) +
-                                ( q(A1+ i*h1,B1+ 0*h2) + 2/h2 ) * omega[i][0] -
-                                1/(h1*h1)*(omega[i+1][0] - omega[i][0] - omega[i][0]+ omega[i-1][0]);
-        }
-
-        #pragma dvm parallel([i] on A_omega[i][N]) shadow_renew(omega)
-        for (i = 0; i <= M; ++i) {
-            if (i >= 1 && i < M) {
+        for (i = 0; i < M; ++i) {
+            if (i >= 1) {
                 // it's (10) equations
                 // i=1,M-1
-                // top applying
-                A_omega[i][N] = 2/(h2*h2) * (omega[i][N] - omega[i][N-1]) +
-                                ( q(A1+ i*h1,B1+ N*h2) + 2/h2 ) * omega[i][N] -
-                                1/(h1*h1)*(omega[i+1][N] - omega[i][N] - omega[i][N]+ omega[i-1][N]);
-            } else if (i == 0) {
-                // it's (14) equation
-                // top left
-                A_omega[0][N] = -2/(h1*h1)*(omega[1][N]- omega[0][N])+
-                            2/(h2*h2)*(omega[0][N]- omega[0][N-1])+
-                            (q(A1+ 0*h1,B1+ N*h2) + 2/h1 + 2/h2) * omega[0][N]; 
-            } else if (i == M) {
-                // it's (13) equation
-                // top right
-                A_omega[M][N] = 2/(h1*h1)*(omega[M][N] - omega[M-1][N]) +
-                                    2/(h2*h2)*(omega[M][N] - omega[M][N-1]) +
-                                    (q(A1+ M*h1,B1+ N*h2) + 2/h1 + 2/h2) * omega[M][N];
-            }
-        }
-
-        #pragma dvm parallel([j] on A_omega[0][j]) shadow_renew(omega)
-        for (j = 0; j < N; ++j) {
-            
-            if (j >= 1) {
-                // it's (9) equations
-                // j=1,N-1
-                // left applying
-                A_omega[0][j] = -2/(h1*h1) * (omega[1][j] - omega[0][j]) + 
-                                (q(A1+ 0*h1,B1+ j*h2) + 2/h1) * omega[0][j] - 
-                                1/(h2*h2)*(omega[0][j+1] - omega[0][j] - omega[0][j]+ omega[0][j-1]); 
-            } else {
+                // bottom applying
+                A_omega[i][0] = -2/(h2*h2) * (omega[i][1] - omega[i][0]) +
+                                ( q(A1+ i*h1,B1+ 0*h2) + 2/h2 ) * omega[i][0] -
+                                1/(h1*h1)*(omega[i+1][0] - omega[i][0] - omega[i][0]+ omega[i-1][0]);
+            } else if (i == 0){  
                 // remaining corner points
                 // bottom left
                 // it's (11) equation
                 A_omega[0][0] = -2/(h1*h1)*(omega[1][0] - omega[0][0]) - 
-                                2/(h2*h2)*(omega[0][1] - omega[0][0]) +
-                                (q(A1+ 0*h1,B1+ 0*h2) + 2/h1 + 2/h2) * omega[0][0];
+                            2/(h2*h2)*(omega[0][1] - omega[0][0]) +
+                            (q(A1+ 0*h1,B1+ 0*h2) + 2/h1 + 2/h2) * omega[0][0];
             }
+        }
 
+        #pragma dvm parallel([i] on A_omega[i][N]) shadow_renew(omega)
+        for (i = 1; i <= M; ++i) {
+            if (i < M){
+            // it's (10) equations
+            // i=1,M-1
+            // top applying
+            A_omega[i][N] = 2/(h2*h2) * (omega[i][N] - omega[i][N-1]) +
+                                ( q(A1+ i*h1,B1+ N*h2) + 2/h2 ) * omega[i][N] -
+                                1/(h1*h1)*(omega[i+1][N] - omega[i][N] - omega[i][N]+ omega[i-1][N]);
+            } else if (i == M) {
+      
+            // it's (13) equation
+            // top right
+            A_omega[M][N] = 2/(h1*h1)*(omega[M][N] - omega[M-1][N]) +
+                            2/(h2*h2)*(omega[M][N] - omega[M][N-1]) +
+                            (q(A1+ M*h1,B1+ N*h2) + 2/h1 + 2/h2) * omega[M][N]; 
+            }
+        }
+
+        #pragma dvm parallel([j] on A_omega[0][j]) shadow_renew(omega)
+        for (j = 1; j <= N; ++j) {
+            if (j < N) {
+                // it's (9) equations
+                // j=1,N-1
+                // left applying
+                A_omega[0][j] = -2/(h1*h1) * (omega[1][j] - omega[0][j]) + 
+                                    (q(A1+ 0*h1,B1+ j*h2) + 2/h1) * omega[0][j] - 
+                                    1/(h2*h2)*(omega[0][j+1] - omega[0][j] - omega[0][j]+ omega[0][j-1]);
+            } else if (j == N){
+                // it's (14) equation
+                // top left
+                A_omega[0][N] = -2/(h1*h1)*(omega[1][N]- omega[0][N])+
+                                2/(h2*h2)*(omega[0][N]- omega[0][N-1])+
+                                (q(A1+ 0*h1,B1+ N*h2) + 2/h1 + 2/h2) * omega[0][N];
+            }
         }
 
         #pragma dvm parallel([j] on A_omega[M][j]) shadow_renew(omega)
         for (j = 0; j < N; ++j) {
-            if (j >= 1) {
-            // it's (9) equations
-            // j=1,N-1
-            // right applying
+            if (j >=  1) {
+                // it's (9) equations
+                // j=1,N-1
+                // right applying
                 A_omega[M][j] = 2/(h1*h1) * (omega[M][j] - omega[M-1][j]) + 
-                                (q(A1+ M*h1,B1+ j*h2) + 2/h1) * omega[M][j] - 
-                                1/(h2*h2)*(omega[M][j+1] - omega[M][j] - omega[M][j]+ omega[M][j-1]);
-            } else {
+                                    (q(A1+ M*h1,B1+ j*h2) + 2/h1) * omega[M][j] - 
+                                    1/(h2*h2)*(omega[M][j+1] - omega[M][j] - omega[M][j]+ omega[M][j-1]);
+            } else if (j == 0) {
                 // it's (12) equation
                 // bottom right
                 A_omega[M][0] = 2/(h1*h1)*(omega[M][0] - omega[M-1][0]) - 
-                            2/(h2*h2)*(omega[M][1] - omega[M][0]) +
-                            (q(A1+ M*h1,B1+ 0*h2) + 2/h1 + 2/h2) * omega[M][0];           
+                                2/(h2*h2)*(omega[M][1] - omega[M][0]) +
+                                (q(A1+ M*h1,B1+ 0*h2) + 2/h1 + 2/h2) * omega[M][0];
             }
         }
     }
