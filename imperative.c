@@ -365,37 +365,37 @@ double scalarProduct_A_r_to_r() {
     return sum_;
 }
 
-// double scalarProduct_A_r_to_A_r() {
-//     size_t i, j;
-//     double sum_ = 0.0;
-//     #pragma dvm actual(sum_)
-//     #pragma dvm region
-//     {
-//         #pragma dvm parallel([i][j] on A_r[i][j]) reduction(sum(sum_))
-//         for (i = 0; i < M + 1; ++i) {
-//             for (j = 0; j < N + 1; ++j) {
-//                 sum_ += h1 * h2 * ro(i, M)*ro(j, N) * A_r[i][j] * A_r[i][j];
-//             }
-//         }
-//     }
-//     return sum_;
-// }
+double scalarProduct_A_r_to_A_r() {
+    size_t i, j;
+    double sum_ = 0.0;
+    #pragma dvm actual(sum_)
+    #pragma dvm region
+    {
+        #pragma dvm parallel([i][j] on A_r[i][j]) reduction(sum(sum_))
+        for (i = 0; i < M + 1; ++i) {
+            for (j = 0; j < N + 1; ++j) {
+                sum_ += h1 * h2 * ro(i, M)*ro(j, N) * A_r[i][j] * A_r[i][j];
+            }
+        }
+    }
+    return sum_;
+}
 
-// double scalarProduct_tau_r_to_tau_r() {
-//     size_t i, j;
-//     double sum_ = 0.0;
-//     #pragma dvm actual(sum_)
-//     #pragma dvm region
-//     {
-//         #pragma dvm parallel([i][j] on A_r[i][j]) reduction(sum(sum_))
-//         for (i = 0; i < M + 1; ++i) {
-//             for (j = 0; j < N + 1; ++j) {
-//                 sum_ += h1 * h2 * ro(i, M)*ro(j, N) * r[i][j]*tau * r[i][j]*tau;
-//             }
-//         }
-//     }
-//     return sum_;
-// }
+double scalarProduct_tau_r_to_tau_r() {
+    size_t i, j;
+    double sum_ = 0.0;
+    #pragma dvm actual(sum_)
+    #pragma dvm region
+    {
+        #pragma dvm parallel([i][j] on A_r[i][j]) reduction(sum(sum_))
+        for (i = 0; i < M + 1; ++i) {
+            for (j = 0; j < N + 1; ++j) {
+                sum_ += h1 * h2 * ro(i, M)*ro(j, N) * r[i][j]*tau * r[i][j]*tau;
+            }
+        }
+    }
+    return sum_;
+}
 
 //// void multiplyByNum(double** items, double num, double** whatWriteTo, double M, double N) {
 ////     for (size_t i = 0; i <= M; ++i) {
