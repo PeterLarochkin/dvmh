@@ -33,4 +33,4 @@ export DVMH_NUM_CUDAS='0' # Number of GPUs per process
 # export dvmshow=0 # Show commands executed by the DVM driver
 export dvmcopy=0
 
-exec "$dvmdir/bin/dvm_drv" "$1"
+exec "$dvmdir/bin/dvm_drv" "$@"
