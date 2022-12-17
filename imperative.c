@@ -7,12 +7,12 @@
 
 #define M (500)
 #define N (500)
+const double h1 = (4.0 / (double) M);
+const double h2 = (3.0 / (double) N);
 const double A1 = 0.0;
 const double A2 = 4.0;
 const double B1 = 0.0; 
 const double B2 = 3.0;
-const double h1 = (4.0 / (double) M);
-const double h2 = (3.0 / (double) N);
 const double epsilon = 0.000001;
 double tau = 0.0;
 
