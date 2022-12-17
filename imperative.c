@@ -352,7 +352,7 @@ double ro(int index, int M_or_N) {
 double scalarProduct_A_r_to_r() {
     size_t i, j;
     double sum_ = 0.0;
-    #pragma dvm actual(s)
+    #pragma dvm actual(sum_)
     #pragma dvm region
     {
         #pragma dvm parallel([i][j] on A_r[i][j]) reduction(sum(sum_))
