@@ -476,27 +476,27 @@ int main(/*int argc, char** argv*/) {
         count++;
     }
     
-    // dvmh_barrier();
-    // end = dvmh_wtime();
+    dvmh_barrier();
+    end = dvmh_wtime();
     
     
-    // double max_ = 0.0;
-    // #pragma dvm actual(max_)
-    // #pragma dvm region
-    // {
-    //     #pragma dvm parallel([i][j] on omega_next[i][j]) reduction(max(max_))
-    //     for (i = 0; i < M + 1; ++i) {
-    //         for (j = 0; j < N + 1; ++j) {
-    //             double item = fabs(omega_next[i][j] - u(h1*i, h2*j));
-    //             if (item > max_) {
-    //                 max_ = item;
-    //             }
+    double max_ = 0.0;
+    #pragma dvm actual(max_)
+    #pragma dvm region
+    {
+        #pragma dvm parallel([i][j] on omega_next[i][j]) reduction(max(max_))
+        for (i = 0; i < M + 1; ++i) {
+            for (j = 0; j < N + 1; ++j) {
+                double item = fabs(omega_next[i][j] - u(h1*i, h2*j));
+                if (item > max_) {
+                    max_ = item;
+                }
                 
-    //         }
-    //     }
-    // }
+            }
+        }
+    }
     
-    // printf("time:%.10f, diff:%.10f\n", (end-start), max_);
+    printf("time:%.10f, diff:%.10f\n", (end-start), max_);
     
     return 0;
 }
