@@ -456,12 +456,12 @@ int main(/*int argc, char** argv*/) {
                 }
             }
         }
-        // // applyA(r, A_r, M, N, h1, h2, A1, B1);
-        // applyA_to_r();
-        // // tau = scalarProduct(A_r, r, M, N, h1, h2) / scalarProduct(A_r, A_r, M, N, h1, h2);
-        // tau = scalarProduct_A_r_to_r()/scalarProduct_A_r_to_A_r();
-        // // multiplyByNum(r, tau, tau_r, M, N); tau_r = tau * r
-        // // minus(omega, tau_r, omega_next, M, N);
+        // applyA(r, A_r, M, N, h1, h2, A1, B1);
+        applyA_to_r();
+        // tau = scalarProduct(A_r, r, M, N, h1, h2) / scalarProduct(A_r, A_r, M, N, h1, h2);
+        tau = scalarProduct_A_r_to_r()/scalarProduct_A_r_to_A_r();
+        // multiplyByNum(r, tau, tau_r, M, N); tau_r = tau * r
+        // minus(omega, tau_r, omega_next, M, N);
         // #pragma dvm region
         // {
         //     for (i = 0; i <= M; ++i) {
