@@ -6,13 +6,13 @@
 
 #define M (500)
 #define N (500)
-const double h1 = (4.0 / (double) M);
-const double h2 = (3.0 / (double) N);
-const double A1 = 0.0;
-const double A2 = 4.0;
-const double B1 = 0.0; 
-const double B2 = 3.0;
-const double epsilon = 0.000001;
+#define h1 (4.0 / (double) M)
+#define h2 ((3.0 / (double) N))
+#define A1 (0.0)
+#define A2 (4.0)
+#define B1 (0.0)
+#define B2 (3.0)
+#define epsilon (0.000001)
 double tau = 0.0;
 
 #pragma dvm array distribute [block][block]
@@ -43,7 +43,6 @@ double F(double x, double y) {
 }
 
 double psi(double x, double y) {
-    
     if (x == A2 && B1<y && y<B2) {
         // 1
         double u_ = sqrt(4.0+x*y);
@@ -286,15 +285,14 @@ void getB() {
                 // it's (10) equations
                 // i=1,M-1
                 // bottom applying
-                // double h1 = 4.0/M;
-                // double h2 = 3.0/N;
-                B[i][0] = psi(A1 + i*(4.0/M /*h1*/), B1 /*+ 0*h2*/) * 2/(3.0/N /*h2*/) + F(A1 + i * (4.0/M /*h1*/), B1 /*+ 0*h2*/);
+                
+                B[i][0] = psi(A1 + i*h1, B1 /*+ 0*h2*/) * 2/h2 + F(A1 + i * h1, B1 /*+ 0*h2*/);
             } 
             else if (i == 0){  
                 // remaining corner points
                 // bottom left
                 // it's (11) equation
-                B[i][0] = psi(A1 /*+ 0*h1*/, B1 /*+ 0*h2*/) * (2/(4.0/M /*h1*/) + 2/(3.0/N /*h2*/)) + F(A1 /* + 0*h1*/, B1 /*+ 0*h2*/);
+                B[i][0] = psi(A1 /*+ 0*h1*/, B1 /*+ 0*h2*/) * (2/h1 + 2/h2) + F(A1 /* + 0*h1*/, B1 /*+ 0*h2*/);
             }
         }
 
