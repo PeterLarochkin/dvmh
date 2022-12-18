@@ -23,7 +23,7 @@ export DVMH_NUM_CUDAS='0' # Number of GPUs per process
 # export DVMH_CUDAS_PERF='' # Performance of each GPU per device
 # export DVMH_NO_DIRECT_COPY=0 # Use standard cudaMemcpy functions instead of direct copying with GPU
 # export DVMH_SPECIALIZE_RTC=1 # Use specialization algorithm to reduce CUDA kernel's resources / or compile kernels during execution without changes
-# export DVMH_EXCLUSIVE=0 # Use exclusive running mode on LSF
+export DVMH_EXCLUSIVE=1 # Use exclusive running mode on LSF
 
 #--------------- Debugging options:
 # export DVMH_LOGLEVEL=3 # Levels of debugging: 1 - errors only, 2 - warning, 3 - info, 4 - debug, 5 - trace
