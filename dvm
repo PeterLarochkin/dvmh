@@ -5,7 +5,7 @@ export dvmbuild='Version 5.0, revision 8114, platform POLUS, build 37'
 
 #--------------- One can customize compiler options:
 # export PCC='mpicc -O3 -fopenmp' # C compiler
-export PCC='mpixlc -qstrict -Ofast'
+export PCC='mpixlc -qstrict -Ofast -O3'
 # export PCXX='mpic++ -g -O3 -fopenmp ' # C++ compiler
 # export PFORT='mpif77 -g -O3 -fopenmp ' # Fortran compiler
 # export NVCC='/usr/local/cuda/bin/nvcc -arch=sm_60 -DHAVE_EXPLICIT_CAST -DPGI_COMPILE_BITCODE -DHAVE_EXPLICIT_CAST' # NVIDIA CUDA C++ compiler
@@ -15,9 +15,9 @@ export PCC='mpixlc -qstrict -Ofast'
 
 #--------------- One can set launch options:
 # export dvmwait=0 # Wait for task completion
-export DVMH_PPN='1' # Number of processes per node
+export DVMH_PPN='8' # Number of processes per node
 # export DVMH_STACKSIZE='' # Stack size to set for the task
-export DVMH_NUM_THREADS='1' # Number of CPU threads per process
+export DVMH_NUM_THREADS='0' # Number of CPU threads per process
 export DVMH_NUM_CUDAS='0' # Number of GPUs per process
 # export DVMH_CPU_PERF='' # Performance of all cores of CPU per process
 # export DVMH_CUDAS_PERF='' # Performance of each GPU per device
