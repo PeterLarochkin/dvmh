@@ -15,7 +15,7 @@ export PCC='mpicc -O3 -fopenmp' # C compiler
 
 #--------------- One can set launch options:
 # export dvmwait=0 # Wait for task completion
-export DVMH_PPN='20' # Number of processes per node
+export DVMH_PPN='40' # Number of processes per node
 # export DVMH_STACKSIZE='' # Stack size to set for the task
 export DVMH_NUM_THREADS='4' # Number of CPU threads per process
 export DVMH_NUM_CUDAS='0' # Number of GPUs per process
