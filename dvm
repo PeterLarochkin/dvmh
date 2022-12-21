@@ -31,6 +31,6 @@ export DVMH_EXCLUSIVE=1 # Use exclusive running mode on LSF
 # export DVMH_COMPARE_DEBUG=0 # An alternative way to turn comparative debugging mode on
 # export dvmsave=0 # Save convertation results
 # export dvmshow=0 # Show commands executed by the DVM driver
-# export dvmcopy=1
+export dvmcopy=1
 
 exec "$dvmdir/bin/dvm_drv" "$@"
