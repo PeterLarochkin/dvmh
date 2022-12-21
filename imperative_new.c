@@ -234,7 +234,8 @@ int main(/*int argc, char** argv*/) {
     double squared_difference = sq_eps;
     int i, j;
 
-    #pragma dvm region {
+    #pragma dvm region 
+    {
         #pragma dvm parallel([i][j] on omega_next[i][j])
         for (i = 0; i <= M; ++i) {
             for (j = 0; j <= N; ++j) {
