@@ -14,18 +14,18 @@
 #define h1 (4.0/M)
 #define h2 (3.0/N)
 
-#pragma dvm array distribute [block][block]
-double B[M + 1][N + 1];
-#pragma dvm array align([i][j] with B[i][j])
-double omega_next[M + 1][N + 1];
-#pragma dvm array align([i][j] with B[i][j]), shadow[1:1][1:1]
-double r[M + 1][N + 1];
-#pragma dvm array align([i][j] with B[i][j])
-double A_r[M + 1][N + 1];
-#pragma dvm array align([i][j] with B[i][j])
-double A_omega[M + 1][N + 1];
-#pragma dvm array align([i][j] with B[i][j]), shadow[1:1][1:1]
-double omega[M + 1][N + 1];
+// #pragma dvm array distribute [block][block]
+// double B[M + 1][N + 1];
+// #pragma dvm array align([i][j] with B[i][j])
+// double omega_next[M + 1][N + 1];
+// #pragma dvm array align([i][j] with B[i][j]), shadow[1:1][1:1]
+// double r[M + 1][N + 1];
+// #pragma dvm array align([i][j] with B[i][j])
+// double A_r[M + 1][N + 1];
+// #pragma dvm array align([i][j] with B[i][j])
+// double A_omega[M + 1][N + 1];
+// #pragma dvm array align([i][j] with B[i][j]), shadow[1:1][1:1]
+// double omega[M + 1][N + 1];
 
 
 
