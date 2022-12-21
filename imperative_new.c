@@ -21,13 +21,13 @@ const double h2 = 3.0/N;
 double B[M + 1][N + 1];
 #pragma dvm array align([i][j] with B[i][j])
 double omega_next[M + 1][N + 1];
-#pragma dvm array align([i][j] with B[i][j]), shadow[1:1][1:1]
+#pragma dvm array align([i][j] with B[i][j]) shadow[1:1][1:1]
 double r[M + 1][N + 1];
 #pragma dvm array align([i][j] with B[i][j])
 double A_r[M + 1][N + 1];
 #pragma dvm array align([i][j] with B[i][j])
 double A_omega[M + 1][N + 1];
-#pragma dvm array align([i][j] with B[i][j]), shadow[1:1][1:1]
+#pragma dvm array align([i][j] with B[i][j]) shadow[1:1][1:1]
 double omega[M + 1][N + 1];
 
 
