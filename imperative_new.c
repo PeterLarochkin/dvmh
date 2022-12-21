@@ -6,12 +6,13 @@
 
 #define M (100)
 #define N (100)
-const double epsilon = 0.001;
+#define epsilon (0.001)
 
-const double A1 = 0.0;
-const double A2 = 4.0;
-const double B1 = 0.0;
-const double B2 = 3.0;
+#define  A1 (0.0)
+#define  A2 (4.0)
+#define  B1 (0.0)
+#define  B2 (3.0)
+
 double h1 = 4.0/M;
 double h2 = 3.0/N;
 #pragma dvm array distribute [block][block]
