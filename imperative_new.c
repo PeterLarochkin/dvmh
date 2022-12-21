@@ -6,7 +6,7 @@
 
 #define M (100)
 #define N (100)
-#define epsilon (0.001)
+#define epsilon (0.000001)
 #define A1 (0.0)
 #define A2 (4.0)
 #define B1 (0.0)
@@ -293,7 +293,7 @@ int main(/*int argc, char** argv*/) {
     }
 
     int count = 0;
-    while (squared_difference >= sq_eps && count < 500)
+    while (squared_difference >= sq_eps && count < 2500)
     {
         #pragma dvm region
         {
