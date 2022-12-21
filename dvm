@@ -34,3 +34,4 @@ export DVMH_EXCLUSIVE=1 # Use exclusive running mode on LSF
 export dvmcopy=1
 
 exec "$dvmdir/bin/dvm_drv" "$@"
+λ
