@@ -7,14 +7,13 @@
 #define M (100)
 #define N (100)
 #define epsilon (0.001)
+#define A1 (0.0)
+#define A2 (4.0)
+#define B1 (0.0)
+#define B2 (3.0)
+#define h1 4.0/M
+#define h2 3.0/N
 
-#define  A1 (0.0)
-#define  A2 (4.0)
-#define  B1 (0.0)
-#define  B2 (3.0)
-
-double h1 = 4.0/M;
-double h2 = 3.0/N;
 #pragma dvm array distribute [block][block]
 double B[M + 1][N + 1];
 #pragma dvm array align([i][j] with B[i][j])
