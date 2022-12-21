@@ -15,7 +15,7 @@ export PCC='mpicc -O3 -fopenmp' # C compiler
 
 #--------------- One can set launch options:
 # export dvmwait=0 # Wait for task completion
-export DVMH_PPN='8' # Number of processes per node
+export DVMH_PPN='4' # Number of processes per node
 # export DVMH_STACKSIZE='' # Stack size to set for the task
 export DVMH_NUM_THREADS='1' # Number of CPU threads per process
 export DVMH_NUM_CUDAS='0' # Number of GPUs per process
@@ -31,7 +31,6 @@ export DVMH_EXCLUSIVE=1 # Use exclusive running mode on LSF
 # export DVMH_COMPARE_DEBUG=0 # An alternative way to turn comparative debugging mode on
 # export dvmsave=0 # Save convertation results
 # export dvmshow=0 # Show commands executed by the DVM driver
-export dvmcopy=1
+# export dvmcopy=1
 
 exec "$dvmdir/bin/dvm_drv" "$@"
-λ
