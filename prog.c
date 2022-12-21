@@ -417,6 +417,6 @@ int main(/*int argc, char** argv*/) {
     }
     
     printf("time:%.10f, max_diff:%.10f\n", (end-start), max_);
-    dvmh_barrier();
+    // dvmh_barrier();
     return 0;
 }
