@@ -432,7 +432,7 @@ int main(/*int argc, char** argv*/) {
     getB();
 
     int count = 0;
-    while (squared_difference >= sq_eps)
+    while (squared_difference >= sq_eps && count < 500)
     {
         size_t i, j;
         #pragma dvm region
