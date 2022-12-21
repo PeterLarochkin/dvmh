@@ -4,10 +4,10 @@
 
 
 
-#define M (100)
-#define N (200)
+#define M (500)
+#define N (1000)
 #define h1 (4.0 / (double) M)
-#define h2 ((3.0 / (double) N))
+#define h2 (3.0 / (double) N)
 #define A1 (0.0)
 #define A2 (4.0)
 #define B1 (0.0)
