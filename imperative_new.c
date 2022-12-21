@@ -11,8 +11,8 @@
 #define A2 (4.0)
 #define B1 (0.0)
 #define B2 (3.0)
-#define h1 4.0/M
-#define h2 3.0/N
+#define h1 (4.0/M)
+#define h2 (3.0/N)
 
 #pragma dvm array distribute [block][block]
 double B[M + 1][N + 1];
