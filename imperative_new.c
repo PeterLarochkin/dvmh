@@ -398,7 +398,7 @@ int main(/*int argc, char** argv*/) {
             printf("n:%d, diff:%.10f\n", count, sqrt(squared_difference));
         count++;
     }
-    dvmh_barrier();
+    
     end = dvmh_wtime();
     double max_ = 0.0;
     #pragma dvm actual(max_)
