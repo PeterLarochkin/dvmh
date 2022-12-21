@@ -15,7 +15,7 @@ export PCC='mpicc -O3 -fopenmp' # C compiler
 
 #--------------- One can set launch options:
 # export dvmwait=0 # Wait for task completion
-export DVMH_PPN='4' # Number of processes per node
+export DVMH_PPN='6' # Number of processes per node
 # export DVMH_STACKSIZE='' # Stack size to set for the task
 export DVMH_NUM_THREADS='1' # Number of CPU threads per process
 export DVMH_NUM_CUDAS='0' # Number of GPUs per process
@@ -23,7 +23,7 @@ export DVMH_NUM_CUDAS='0' # Number of GPUs per process
 # export DVMH_CUDAS_PERF='' # Performance of each GPU per device
 # export DVMH_NO_DIRECT_COPY=0 # Use standard cudaMemcpy functions instead of direct copying with GPU
 # export DVMH_SPECIALIZE_RTC=1 # Use specialization algorithm to reduce CUDA kernel's resources / or compile kernels during execution without changes
-# export DVMH_EXCLUSIVE=1 # Use exclusive running mode on LSF
+export DVMH_EXCLUSIVE=1 # Use exclusive running mode on LSF
 
 #--------------- Debugging options:
 # export DVMH_LOGLEVEL=3 # Levels of debugging: 1 - errors only, 2 - warning, 3 - info, 4 - debug, 5 - trace
