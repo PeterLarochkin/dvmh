@@ -474,7 +474,7 @@ int main(/*int argc, char** argv*/) {
             #pragma dvm parallel([i][j] on A_r[i][j]) reduction(sum(sum_))
             for (i = 0; i <= M; ++i) {
                 for (j = 0; j <= N; ++j) {
-                    sum = sum + h1*h2*ro(i, M)*ro(j, N)*A_r[i][j] * A_r[i][j];
+                    sum_ = sum_ + h1*h2*ro(i, M)*ro(j, N)*A_r[i][j] * A_r[i][j];
                 }
             }
         }
