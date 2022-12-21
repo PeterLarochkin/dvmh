@@ -1,0 +1,408 @@
+--------------------------------------------------------------------------
+A process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.
+
+The process that invoked fork was:
+
+  Local host:          [[29010,1],0] (PID 42127)
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.
+
+The process that invoked fork was:
+
+  Local host:          [[29010,1],1] (PID 42128)
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+1: *** RTS stack trace:
+1: *** RTS stack trace:
+1: *** RTS stack trace:
+1: *** RTS stack trace:
+0: *** RTS stack trace:
+1: *** RTS stack trace:
+0: *** RTS stack trace:
+0: *** RTS stack trace:
+0: *** RTS stack trace:
+1: #0 imperative_new() [0x10151d28]
+0: *** RTS stack trace:
+1: #0 imperative_new() [0x10151d28]
+1: #0 imperative_new() [0x10151d28]
+1: #0 imperative_new() [0x10151d28]
+0: #0 imperative_new() [0x10151d28]
+0: #0 imperative_new() [0x10151d28]
+1: #0 imperative_new() [0x10151d28]
+0: #0 imperative_new() [0x10151d28]
+0: #0 imperative_new() [0x10151d28]
+1: #1 imperative_new() [0x10152038]
+1: #2 [0x100000050478]
+0: #0 imperative_new() [0x10151d28]
+1: #1 imperative_new() [0x10152038]
+1: #2 [0x100000050478]
+0: #1 imperative_new() [0x10152038]
+0: #2 [0x100000050478]
+1: #1 imperative_new() [0x10152038]
+1: #2 [0x100000050478]
+1: #1 imperative_new() [0x10152038]
+1: #2 [0x100000050478]
+1: #1 imperative_new() [0x10152038]
+1: #2 [0x100000050478]
+0: #1 imperative_new() [0x10152038]
+0: #2 [0x100000050478]
+1: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+0: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+1: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+0: #1 imperative_new() [0x10152038]
+0: #2 [0x100000050478]
+1: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+0: #1 imperative_new() [0x10152038]
+0: #2 [0x100000050478]
+1: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+0: #1 imperative_new() [0x10152038]
+0: #2 [0x100000050478]
+1: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+0: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+1: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+0: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+1: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+0: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+1: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+0: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+1: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+0: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+1: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+0: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+1: #5 /lib64/libc.so.6(_IO_proc_open+0x124) [0x10000303ad14]
+0: #5 /lib64/libc.so.6(_IO_proc_open+0x124) [0x10000303ad14]
+1: #5 /lib64/libc.so.6(_IO_proc_open+0x124) [0x10000303ad14]
+0: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+1: #5 /lib64/libc.so.6(_IO_proc_open+0x124) [0x10000303ad14]
+0: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+1: #5 /lib64/libc.so.6(_IO_proc_open+0x124) [0x10000303ad14]
+0: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+1: #5 /lib64/libc.so.6(_IO_proc_open+0x124) [0x10000303ad14]
+0: #5 /lib64/libc.so.6(_IO_proc_open+0x124) [0x10000303ad14]
+1: #6 /lib64/libc.so.6(popen+0x78) [0x10000303b058]
+0: #6 /lib64/libc.so.6(popen+0x78) [0x10000303b058]
+1: #6 /lib64/libc.so.6(popen+0x78) [0x10000303b058]
+0: #5 /lib64/libc.so.6(_IO_proc_open+0x124) [0x10000303ad14]
+1: #6 /lib64/libc.so.6(popen+0x78) [0x10000303b058]
+0: #5 /lib64/libc.so.6(_IO_proc_open+0x124) [0x10000303ad14]
+1: #6 /lib64/libc.so.6(popen+0x78) [0x10000303b058]
+0: #5 /lib64/libc.so.6(_IO_proc_open+0x124) [0x10000303ad14]
+1: #6 /lib64/libc.so.6(popen+0x78) [0x10000303b058]
+0: #6 /lib64/libc.so.6(popen+0x78) [0x10000303b058]
+1: #7 imperative_new() [0x101a9a28]
+0: #7 imperative_new() [0x101a9a28]
+1: #7 imperative_new() [0x101a9a28]
+0: #6 /lib64/libc.so.6(popen+0x78) [0x10000303b058]
+1: #7 imperative_new() [0x101a9a28]
+0: #6 /lib64/libc.so.6(popen+0x78) [0x10000303b058]
+1: #7 imperative_new() [0x101a9a28]
+0: #6 /lib64/libc.so.6(popen+0x78) [0x10000303b058]
+1: #7 imperative_new() [0x101a9a28]
+0: #7 imperative_new() [0x101a9a28]
+1: #8 imperative_new() [0x101edbd0]
+0: #8 imperative_new() [0x101edbd0]
+1: #8 imperative_new() [0x101edbd0]
+0: #7 imperative_new() [0x101a9a28]
+1: #8 imperative_new() [0x101edbd0]
+0: #7 imperative_new() [0x101a9a28]
+1: #8 imperative_new() [0x101edbd0]
+0: #7 imperative_new() [0x101a9a28]
+1: #8 imperative_new() [0x101edbd0]
+0: #8 imperative_new() [0x101edbd0]
+1: #9 imperative_new() [0x1015ad78]
+0: #9 imperative_new() [0x1015ad78]
+1: #9 imperative_new() [0x1015ad78]
+0: #8 imperative_new() [0x101edbd0]
+1: #9 imperative_new() [0x1015ad78]
+0: #8 imperative_new() [0x101edbd0]
+1: #9 imperative_new() [0x1015ad78]
+0: #8 imperative_new() [0x101edbd0]
+1: #9 imperative_new() [0x1015ad78]
+0: #9 imperative_new() [0x1015ad78]
+1: #10 imperative_new() [0x1022b534]
+0: #10 imperative_new() [0x1022b534]
+1: #10 imperative_new() [0x1022b534]
+0: #9 imperative_new() [0x1015ad78]
+1: #10 imperative_new() [0x1022b534]
+0: #9 imperative_new() [0x1015ad78]
+1: #10 imperative_new() [0x1022b534]
+0: #9 imperative_new() [0x1015ad78]
+1: #10 imperative_new() [0x1022b534]
+0: #10 imperative_new() [0x1022b534]
+1: #11 imperative_new() [0x1022b588]
+0: #11 imperative_new() [0x1022b588]
+1: #11 imperative_new() [0x1022b588]
+0: #10 imperative_new() [0x1022b534]
+1: #11 imperative_new() [0x1022b588]
+0: #10 imperative_new() [0x1022b534]
+1: #11 imperative_new() [0x1022b588]
+0: #10 imperative_new() [0x1022b534]
+1: #11 imperative_new() [0x1022b588]
+0: #11 imperative_new() [0x1022b588]
+1: #12 imperative_new() [0x10112790]
+0: #12 imperative_new() [0x10112790]
+1: #12 imperative_new() [0x10112790]
+0: #11 imperative_new() [0x1022b588]
+1: #12 imperative_new() [0x10112790]
+0: #11 imperative_new() [0x1022b588]
+1: #12 imperative_new() [0x10112790]
+0: #11 imperative_new() [0x1022b588]
+1: #12 imperative_new() [0x10112790]
+0: #12 imperative_new() [0x10112790]
+1: #13 /lib64/libpthread.so.0(+0x8af4) [0x100002f88af4]
+0: #13 /lib64/libpthread.so.0(+0x8af4) [0x100002f88af4]
+1: #13 /lib64/libpthread.so.0(+0x8af4) [0x100002f88af4]
+0: #12 imperative_new() [0x10112790]
+1: #13 /lib64/libpthread.so.0(+0x8af4) [0x100002f88af4]
+0: #12 imperative_new() [0x10112790]
+1: #13 /lib64/libpthread.so.0(+0x8af4) [0x100002f88af4]
+0: #12 imperative_new() [0x10112790]
+1: #13 /lib64/libpthread.so.0(+0x8af4) [0x100002f88af4]
+0: #13 /lib64/libpthread.so.0(+0x8af4) [0x100002f88af4]
+0: #14 /lib64/libc.so.6(clone+0xe4) [0x1000030e4ef4]
+0: USRFILE=imperative_new.c;  USRLINE=226;
+0: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+[polus-ib:42509] *** Process received signal ***
+1: #14 /lib64/libc.so.6(clone+0xe4) [0x1000030e4ef4]
+1: USRFILE=imperative_new.c;  USRLINE=226;
+1: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+[polus-ib:42503] *** Process received signal ***
+[polus-ib:42509] Signal: Segmentation fault (11)
+[polus-ib:42509] Signal code: Address not mapped (1)
+[polus-ib:42509] Failing at address: 0xc10
+[polus-ib:42503] Signal: Segmentation fault (11)
+[polus-ib:42503] Signal code: Address not mapped (1)
+[polus-ib:42503] Failing at address: 0xc10
+[polus-ib:42509] [ 0] [polus-ib:42503] [ 0] imperative_new[0x101520b8]
+[polus-ib:42509] [ 1] [0x100000050478]
+[polus-ib:42509] [ 2] imperative_new[0x101520b8]
+[polus-ib:42503] [ 1] [0x100000050478]
+/opt/ibm/lib/libxlsmp.so.1(+0x94728)[0x100002c74728]
+[polus-ib:42509] [ 3] [polus-ib:42503] [ 2] /opt/ibm/lib/libxlsmp.so.1(+0x94728)[0x100002c74728]
+[polus-ib:42503] [ 3] /lib64/libc.so.6(__libc_fork+0x270)[0x10000309b5b0]
+[polus-ib:42509] [ 4] /lib64/libc.so.6(_IO_proc_open+0x124)[0x10000303ad14]
+[polus-ib:42509] [ 5] /lib64/libc.so.6(__libc_fork+0x270)[0x10000309b5b0]
+[polus-ib:42503] [ 4] /lib64/libc.so.6(_IO_proc_open+0x124)[0x10000303ad14]
+[polus-ib:42503] [ 5] /lib64/libc.so.6(popen+0x78)[0x10000303b058]
+[polus-ib:42509] [ 6] imperative_new[0x101a9a28]
+[polus-ib:42509] [ 7] imperative_new[0x101edbd0]
+/lib64/libc.so.6(popen+0x78)[0x10000303b058]
+[polus-ib:42503] [ 6] imperative_new[0x101a9a28]
+[polus-ib:42503] [ 7] imperative_new[0x101edbd0]
+[polus-ib:42503] [ 8] [polus-ib:42509] [ 8] imperative_new[0x1015ad78]
+[polus-ib:42509] [ 9] imperative_new[0x1022b534]
+[polus-ib:42509] [10] imperative_new[0x1015ad78]
+[polus-ib:42503] [ 9] imperative_new[0x1022b534]
+[polus-ib:42503] [10] imperative_new[0x1022b588]
+[polus-ib:42503] [11] imperative_new[0x1022b588]
+[polus-ib:42509] [11] imperative_new[0x10112790]
+[polus-ib:42509] [12] imperative_new[0x10112790]
+[polus-ib:42503] [12] /lib64/libpthread.so.0(+0x8af4)[0x100002f88af4]
+[polus-ib:42503] [13] /lib64/libpthread.so.0(+0x8af4)[0x100002f88af4]
+[polus-ib:42509] [13] /lib64/libc.so.6(clone+0xe4)[0x1000030e4ef4]
+[polus-ib:42503] *** End of error message ***
+/lib64/libc.so.6(clone+0xe4)[0x1000030e4ef4]
+[polus-ib:42509] *** End of error message ***
+1: #14 /lib64/libc.so.6(clone+0xe4) [0x1000030e4ef4]
+1: USRFILE=imperative_new.c;  USRLINE=226;
+1: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+[polus-ib:42498] *** Process received signal ***
+[polus-ib:42498] Signal: Segmentation fault (11)
+[polus-ib:42498] Signal code: Address not mapped (1)
+[polus-ib:42498] Failing at address: 0xc10
+[polus-ib:42498] [ 0] imperative_new[0x101520b8]
+[polus-ib:42498] [ 1] [0x100000050478]
+[polus-ib:42498] [ 2] /opt/ibm/lib/libxlsmp.so.1(+0x94728)[0x100002c74728]
+[polus-ib:42498] [ 3] /lib64/libc.so.6(__libc_fork+0x270)[0x10000309b5b0]
+[polus-ib:42498] [ 4] /lib64/libc.so.6(_IO_proc_open+0x124)[0x10000303ad14]
+[polus-ib:42498] [ 5] /lib64/libc.so.6(popen+0x78)[0x10000303b058]
+[polus-ib:42498] [ 6] imperative_new[0x101a9a28]
+[polus-ib:42498] [ 7] imperative_new[0x101edbd0]
+[polus-ib:42498] [ 8] imperative_new[0x1015ad78]
+[polus-ib:42498] [ 9] imperative_new[0x1022b534]
+[polus-ib:42498] [10] imperative_new[0x1022b588]
+[polus-ib:42498] [11] imperative_new[0x10112790]
+[polus-ib:42498] [12] /lib64/libpthread.so.0(+0x8af4)[0x100002f88af4]
+[polus-ib:42498] [13] 0: #13 /lib64/libpthread.so.0(+0x8af4) [0x100002f88af4]
+/lib64/libc.so.6(clone+0xe4)[0x1000030e4ef4]
+[polus-ib:42498] *** End of error message ***
+1: #14 /lib64/libc.so.6(clone+0xe4) [0x1000030e4ef4]
+1: USRFILE=imperative_new.c;  USRLINE=226;
+1: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+[polus-ib:42499] *** Process received signal ***
+[polus-ib:42499] Signal: Segmentation fault (11)
+[polus-ib:42499] Signal code: Address not mapped (1)
+[polus-ib:42499] Failing at address: 0xc10
+[polus-ib:42499] [ 0] imperative_new[0x101520b8]
+[polus-ib:42499] [ 1] [0x100000050478]
+[polus-ib:42499] [ 2] /opt/ibm/lib/libxlsmp.so.1(+0x94728)[0x100002c74728]
+[polus-ib:42499] [ 3] /lib64/libc.so.6(__libc_fork+0x270)[0x10000309b5b0]
+[polus-ib:42499] [ 4] /lib64/libc.so.6(_IO_proc_open+0x124)[0x10000303ad14]
+[polus-ib:42499] [ 5] /lib64/libc.so.6(popen+0x78)[0x10000303b058]
+[polus-ib:42499] [ 6] imperative_new[0x101a9a28]
+[polus-ib:42499] [ 7] imperative_new[0x101edbd0]
+[polus-ib:42499] [ 8] imperative_new[0x1015ad78]
+[polus-ib:42499] [ 9] imperative_new[0x1022b534]
+[polus-ib:42499] [10] imperative_new[0x1022b588]
+[polus-ib:42499] [11] imperative_new[0x10112790]
+[polus-ib:42499] [12] /lib64/libpthread.so.0(+0x8af4)[0x100002f88af4]
+[polus-ib:42499] [13] /lib64/libc.so.6(clone+0xe4)[0x1000030e4ef4]
+[polus-ib:42499] *** End of error message ***
+0: #13 /lib64/libpthread.so.0(+0x8af4) [0x100002f88af4]
+1: #14 /lib64/libc.so.6(clone+0xe4) [0x1000030e4ef4]
+1: USRFILE=imperative_new.c;  USRLINE=226;
+1: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+[polus-ib:42500] *** Process received signal ***
+[polus-ib:42500] Signal: Segmentation fault (11)
+[polus-ib:42500] Signal code: Address not mapped (1)
+[polus-ib:42500] Failing at address: 0xc10
+[polus-ib:42500] [ 0] imperative_new[0x101520b8]
+[polus-ib:42500] [ 1] [0x100000050478]
+[polus-ib:42500] [ 2] /opt/ibm/lib/libxlsmp.so.1(+0x94728)[0x100002c74728]
+[polus-ib:42500] [ 3] /lib64/libc.so.6(__libc_fork+0x270)[0x10000309b5b0]
+[polus-ib:42500] [ 4] /lib64/libc.so.6(_IO_proc_open+0x124)[0x10000303ad14]
+[polus-ib:42500] [ 5] /lib64/libc.so.6(popen+0x78)[0x10000303b058]
+[polus-ib:42500] [ 6] imperative_new[0x101a9a28]
+[polus-ib:42500] [ 7] imperative_new[0x101edbd0]
+[polus-ib:42500] [ 8] imperative_new[0x1015ad78]
+[polus-ib:42500] [ 9] imperative_new[0x1022b534]
+[polus-ib:42500] [10] imperative_new[0x1022b588]
+[polus-ib:42500] [11] imperative_new[0x10112790]
+[polus-ib:42500] [12] /lib64/libpthread.so.0(+0x8af4)[0x100002f88af4]
+[polus-ib:42500] [13] /lib64/libc.so.6(clone+0xe4)[0x1000030e4ef4]
+[polus-ib:42500] *** End of error message ***
+0: #13 /lib64/libpthread.so.0(+0x8af4) [0x100002f88af4]
+1: #14 /lib64/libc.so.6(clone+0xe4) [0x1000030e4ef4]
+1: USRFILE=imperative_new.c;  USRLINE=226;
+1: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+[polus-ib:42501] *** Process received signal ***
+[polus-ib:42501] Signal: Segmentation fault (11)
+[polus-ib:42501] Signal code: Address not mapped (1)
+[polus-ib:42501] Failing at address: 0xc10
+[polus-ib:42501] [ 0] imperative_new[0x101520b8]
+[polus-ib:42501] [ 1] [0x100000050478]
+[polus-ib:42501] [ 2] /opt/ibm/lib/libxlsmp.so.1(+0x94728)[0x100002c74728]
+[polus-ib:42501] [ 3] /lib64/libc.so.6(__libc_fork+0x270)[0x10000309b5b0]
+[polus-ib:42501] [ 4] /lib64/libc.so.6(_IO_proc_open+0x124)[0x10000303ad14]
+[polus-ib:42501] [ 5] /lib64/libc.so.6(popen+0x78)[0x10000303b058]
+[polus-ib:42501] [ 6] imperative_new[0x101a9a28]
+[polus-ib:42501] [ 7] imperative_new[0x101edbd0]
+[polus-ib:42501] [ 8] imperative_new[0x1015ad78]
+[polus-ib:42501] [ 9] imperative_new[0x1022b534]
+[polus-ib:42501] [10] imperative_new[0x1022b588]
+[polus-ib:42501] [11] imperative_new[0x10112790]
+[polus-ib:42501] [12] /lib64/libpthread.so.0(+0x8af4)[0x100002f88af4]
+[polus-ib:42501] [13] /lib64/libc.so.6(clone+0xe4)[0x1000030e4ef4]
+[polus-ib:42501] *** End of error message ***
+0: #14 /lib64/libc.so.6(clone+0xe4) [0x1000030e4ef4]
+0: USRFILE=imperative_new.c;  USRLINE=226;
+0: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+[polus-ib:42513] *** Process received signal ***
+[polus-ib:42513] Signal: Segmentation fault (11)
+[polus-ib:42513] Signal code: Address not mapped (1)
+[polus-ib:42513] Failing at address: 0xc10
+[polus-ib:42513] [ 0] imperative_new[0x101520b8]
+[polus-ib:42513] [ 1] [0x100000050478]
+[polus-ib:42513] [ 2] /opt/ibm/lib/libxlsmp.so.1(+0x94728)[0x100002c74728]
+[polus-ib:42513] [ 3] /lib64/libc.so.6(__libc_fork+0x270)[0x10000309b5b0]
+[polus-ib:42513] [ 4] /lib64/libc.so.6(_IO_proc_open+0x124)[0x10000303ad14]
+[polus-ib:42513] [ 5] /lib64/libc.so.6(popen+0x78)[0x10000303b058]
+[polus-ib:42513] [ 6] imperative_new[0x101a9a28]
+[polus-ib:42513] [ 7] imperative_new[0x101edbd0]
+[polus-ib:42513] [ 8] imperative_new[0x1015ad78]
+[polus-ib:42513] [ 9] imperative_new[0x1022b534]
+[polus-ib:42513] [10] imperative_new[0x1022b588]
+[polus-ib:42513] [11] imperative_new[0x10112790]
+[polus-ib:42513] [12] /lib64/libpthread.so.0(+0x8af4)[0x100002f88af4]
+[polus-ib:42513] [13] /lib64/libc.so.6(clone+0xe4)[0x1000030e4ef4]
+[polus-ib:42513] *** End of error message ***
+0: #14 /lib64/libc.so.6(clone+0xe4) [0x1000030e4ef4]
+0: USRFILE=imperative_new.c;  USRLINE=226;
+0: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+[polus-ib:42511] *** Process received signal ***
+[polus-ib:42511] Signal: Segmentation fault (11)
+[polus-ib:42511] Signal code: Address not mapped (1)
+[polus-ib:42511] Failing at address: 0xc10
+[polus-ib:42511] [ 0] imperative_new[0x101520b8]
+[polus-ib:42511] [ 1] [0x100000050478]
+[polus-ib:42511] [ 2] /opt/ibm/lib/libxlsmp.so.1(+0x94728)[0x100002c74728]
+[polus-ib:42511] [ 3] /lib64/libc.so.6(__libc_fork+0x270)[0x10000309b5b0]
+[polus-ib:42511] [ 4] /lib64/libc.so.6(_IO_proc_open+0x124)[0x10000303ad14]
+[polus-ib:42511] [ 5] /lib64/libc.so.6(popen+0x78)[0x10000303b058]
+[polus-ib:42511] [ 6] imperative_new[0x101a9a28]
+[polus-ib:42511] [ 7] imperative_new[0x101edbd0]
+[polus-ib:42511] [ 8] imperative_new[0x1015ad78]
+[polus-ib:42511] [ 9] imperative_new[0x1022b534]
+[polus-ib:42511] [10] imperative_new[0x1022b588]
+[polus-ib:42511] [11] imperative_new[0x10112790]
+[polus-ib:42511] [12] /lib64/libpthread.so.0(+0x8af4)[0x100002f88af4]
+[polus-ib:42511] [13] /lib64/libc.so.6(clone+0xe4)[0x1000030e4ef4]
+[polus-ib:42511] *** End of error message ***
+0: #14 /lib64/libc.so.6(clone+0xe4) [0x1000030e4ef4]
+0: USRFILE=imperative_new.c;  USRLINE=226;
+0: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+[polus-ib:42516] *** Process received signal ***
+[polus-ib:42516] Signal: Segmentation fault (11)
+[polus-ib:42516] Signal code: Address not mapped (1)
+[polus-ib:42516] Failing at address: 0xc10
+[polus-ib:42516] [ 0] imperative_new[0x101520b8]
+[polus-ib:42516] [ 1] [0x100000050478]
+[polus-ib:42516] [ 2] /opt/ibm/lib/libxlsmp.so.1(+0x94728)[0x100002c74728]
+[polus-ib:42516] [ 3] /lib64/libc.so.6(__libc_fork+0x270)[0x10000309b5b0]
+[polus-ib:42516] [ 4] /lib64/libc.so.6(_IO_proc_open+0x124)[0x10000303ad14]
+[polus-ib:42516] [ 5] /lib64/libc.so.6(popen+0x78)[0x10000303b058]
+[polus-ib:42516] [ 6] imperative_new[0x101a9a28]
+[polus-ib:42516] [ 7] imperative_new[0x101edbd0]
+[polus-ib:42516] [ 8] imperative_new[0x1015ad78]
+[polus-ib:42516] [ 9] imperative_new[0x1022b534]
+[polus-ib:42516] [10] imperative_new[0x1022b588]
+[polus-ib:42516] [11] imperative_new[0x10112790]
+[polus-ib:42516] [12] /lib64/libpthread.so.0(+0x8af4)[0x100002f88af4]
+[polus-ib:42516] [13] /lib64/libc.so.6(clone+0xe4)[0x1000030e4ef4]
+[polus-ib:42516] *** End of error message ***
+0: #14 /lib64/libc.so.6(clone+0xe4) [0x1000030e4ef4]
+0: USRFILE=imperative_new.c;  USRLINE=226;
+0: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+[polus-ib:42514] *** Process received signal ***
+[polus-ib:42514] Signal: Segmentation fault (11)
+[polus-ib:42514] Signal code: Address not mapped (1)
+[polus-ib:42514] Failing at address: 0xc10
+[polus-ib:42514] [ 0] imperative_new[0x101520b8]
+[polus-ib:42514] [ 1] [0x100000050478]
+[polus-ib:42514] [ 2] /opt/ibm/lib/libxlsmp.so.1(+0x94728)[0x100002c74728]
+[polus-ib:42514] [ 3] /lib64/libc.so.6(__libc_fork+0x270)[0x10000309b5b0]
+[polus-ib:42514] [ 4] /lib64/libc.so.6(_IO_proc_open+0x124)[0x10000303ad14]
+[polus-ib:42514] [ 5] /lib64/libc.so.6(popen+0x78)[0x10000303b058]
+[polus-ib:42514] [ 6] imperative_new[0x101a9a28]
+[polus-ib:42514] [ 7] imperative_new[0x101edbd0]
+[polus-ib:42514] [ 8] imperative_new[0x1015ad78]
+[polus-ib:42514] [ 9] imperative_new[0x1022b534]
+[polus-ib:42514] [10] imperative_new[0x1022b588]
+[polus-ib:42514] [11] imperative_new[0x10112790]
+[polus-ib:42514] [12] /lib64/libpthread.so.0(+0x8af4)[0x100002f88af4]
+[polus-ib:42514] [13] /lib64/libc.so.6(clone+0xe4)[0x1000030e4ef4]
+[polus-ib:42514] *** End of error message ***
+n:0, diff:0.0126623399
+n:500, diff:0.0017555972
+n:1000, diff:0.0007281949
+n:1500, diff:0.0003367701
+n:2000, diff:0.0001694175
+time:36.8708916437, diff:0.0386871239

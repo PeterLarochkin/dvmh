@@ -88,138 +88,24 @@ double ro(int index, int M_or_N) {
 
 // void applyA(double** whatApplyTo, double** whatWriteTo, int M, int N, double h1, double h2, double A1, double B1) {
 
-//     //with padding, inside "picture"
-//     for (i = 1; i < M; ++i) {
-//         for (j = 1; j < N; ++j) {
-//             // here is (7) equation works
-//             whatWriteTo[i][j] = whatApplyTo[i][j] * (2/(h1*h1) + 2/(h2*h2) + q(A1+ i*h1, B1+ j*h2)) + 
-//                                 whatApplyTo[i-1][j] * (-1/(h1*h1)) +
-//                                 whatApplyTo[i+1][j] * (-1/(h1*h1)) +
-//                                 whatApplyTo[i][j-1] * (-1/(h2*h2)) +
-//                                 whatApplyTo[i][j+1] * (-1/(h2*h2));
-//         }
-//     }
-//     for (i = 0; i < M; ++i) {
-//         if (i != 0) {
-//             whatWriteTo[i][N] = 2/(h2*h2) * (whatApplyTo[i][N] - whatApplyTo[i][N-1]) +
-//                             ( q(A1+ i*h1,B1+ N*h2) + 2/h2 ) * whatApplyTo[i][N] -
-//                             1/(h1*h1)*(whatApplyTo[i+1][N] - whatApplyTo[i][N] - whatApplyTo[i][N]+ whatApplyTo[i-1][N]); 
-//         } else {
-//             whatWriteTo[0][N] = -2/(h1*h1)*(whatApplyTo[1][N]- whatApplyTo[0][N])+
-//                          2/(h2*h2)*(whatApplyTo[0][N]- whatApplyTo[0][N-1])+
-//                          (q(A1+ 0*h1,B1+ N*h2) + 2/h1 + 2/h2) * whatApplyTo[0][N];
-//         }
-//     }
-
-//     for (i = 1; i <= M; ++i) {
-//         if (i < M)
-//         {
-//             whatWriteTo[i][0] = -2/(h2*h2) * (whatApplyTo[i][1] - whatApplyTo[i][0]) +
-//                             ( q(A1+ i*h1,B1+ 0*h2) + 2/h2 ) * whatApplyTo[i][0] -
-//                             1/(h1*h1)*(whatApplyTo[i+1][0] - whatApplyTo[i][0] - whatApplyTo[i][0]+ whatApplyTo[i-1][0]);
-//         } else {
-//             whatWriteTo[i][0] = 2/(h1*h1)*(whatApplyTo[M][0] - whatApplyTo[i-1][0]) - 
-//                         2/(h2*h2)*(whatApplyTo[i][1] - whatApplyTo[i][0]) +
-//                         (q(A1+ i*h1,B1+ 0*h2) + 2/h1 + 2/h2) * whatApplyTo[i][0];
-//         }
-//     }
-
-//     for (j = 0; j < N; ++j) {
-//         if (j == 0) {
-//             whatWriteTo[0][j] = -2/(h1*h1)*(whatApplyTo[1][j] - whatApplyTo[0][j]) - 
-//                          2/(h2*h2)*(whatApplyTo[0][j+1] - whatApplyTo[0][j]) +
-//                          (q(A1+ 0*h1,B1+ j*h2) + 2/h1 + 2/h2) * whatApplyTo[0][j];
-//         } else {
-//             whatWriteTo[0][j] = -2/(h1*h1) * (whatApplyTo[1][j] - whatApplyTo[0][j]) + 
-//                             (q(A1+ 0*h1,B1+ j*h2) + 2/h1) * whatApplyTo[0][j] - 
-//                             1/(h2*h2)*(whatApplyTo[0][j+1] - whatApplyTo[0][j] - whatApplyTo[0][j]+ whatApplyTo[0][j-1]);
-//         }
-//     }
-
-//     for (j = 1; j <= N; ++j) {
-//         if (j < N) {
-//             whatWriteTo[M][j] = 2/(h1*h1) * (whatApplyTo[M][j] - whatApplyTo[M-1][j]) + 
-//                             (q(A1+ M*h1,B1+ j*h2) + 2/h1) * whatApplyTo[M][j] - 
-//                             1/(h2*h2)*(whatApplyTo[M][j+1] - whatApplyTo[M][j] - whatApplyTo[M][j]+ whatApplyTo[M][j-1]);
-//         } else {
-//             whatWriteTo[M][j] = 2/(h1*h1)*(whatApplyTo[M][j] - whatApplyTo[M-1][j]) +
-//                         2/(h2*h2)*(whatApplyTo[M][j] - whatApplyTo[M][j-1]) +
-//                         (q(A1+ M*h1,B1+ j*h2) + 2/h1 + 2/h2) * whatApplyTo[M][j];
-//         }
-//     }
-
-
-
 // }
 
 // void getB(double** whatWriteTo, int M, int N, double h1, double h2, double A1, double A2, double B1, double B2) {
-//     //with padding, inside "picture"
-//     for (i = 1; i < M; ++i) {
-//         for (int j = 1; j < N; ++j) {
-//             // here is (7) equation works
-//             whatWriteTo[i][j] = F(A1+ i*h1,B1+ j*h2);
-//         }
-//     }
-//     for (i = 1; i <= M; ++i) {
-//         if (i != M) {
-//             whatWriteTo[i][N] = psi(A1+ i*h1, B1+ N*h2, A1, A2, B1, B2, h1, h2) * 2/h2 + F(A1 + i*h1, B1 + N*h2); 
-//         } else {
-//             whatWriteTo[M][N] = psi(A1+ M*h1, B1+ N*h2, A1, A2, B1, B2, h1, h2) * (2/h1 + 2/h2) + F(A1 + M*h1, B1 + N*h2);
-//         }
-        
-//     }
 
-//     for (i = 0; i < M; ++i) {   
-//         if (i==0) {
-//             whatWriteTo[0][0] = psi(A1+ 0*h1, B1+ 0*h2, A1, A2, B1, B2, h1, h2) * (2/h1 + 2/h2) + F(A1 + 0*h1, B1 + 0*h2);
-//         } else {
-//             whatWriteTo[i][0] = psi(A1+ i*h1, B1+ 0*h2, A1, A2, B1, B2, h1, h2) * 2/h2 + F(A1 + i*h1, B1 + 0*h2);
-//         }
-//     }
-
-//     for (j = 1; j <= N; ++j) {
-//         if (j == N) {
-//             whatWriteTo[0][N] = psi(A1+ 0*h1, B1+ N*h2, A1, A2, B1, B2, h1, h2) * (2/h1 + 2/h2) + F(A1 + 0*h1, B1 + N*h2);
-//         } else {
-//             whatWriteTo[0][j] = psi(A1+ 0*h1, B1+ j*h2, A1, A2, B1, B2, h1, h2) * 2/h1 + F(A1 + 0*h1, B1 + j*h2);
-//         }
-//     }
-
-//     for (j = 0; j < N; ++j) {
-//         if (j==0){
-//             whatWriteTo[M][0] = psi(A1+ M*h1, B1+ 0*h2, A1, A2, B1, B2, h1, h2) * (2/h1 + 2/h2) + F(A1 + M*h1, B1 + 0*h2);
-//         } else {
-//             whatWriteTo[M][j] = psi(A1+ M*h1, B1+ j*h2, A1, A2, B1, B2, h1, h2) * 2/h1 + F(A1 + M*h1, B1 + j*h2);
-//         }
-//     }
 // }
 
 // void minus(double** first, double** second, double** whatWriteTo, double M, double N) {
-//     for (size_t i = 0; i <= M; ++i) {
-//             for (size_t j = 0; j <= N; ++j) {
-//             whatWriteTo[i][j] = first[i][j] - second[i][j];
-//         }
-//     }
+
 // }
 
 
 
 // double scalarProduct(double** first, double** second, double M, double N, double h1, double h2) {
-//     double sum = 0.0;
-//     for (size_t i = 0; i <= M; ++i) {
-//         for (size_t j = 0; j <= N; ++j) {
-//             sum = sum + h1*h2*ro(i, M)*ro(j, N)*first[i][j] * second[i][j];
-//         }
-//     }
-//     return sum;
+
 // }
 
 // void multiplyByNum(double** items, double num, double** whatWriteTo, double M, double N) {
-//     for (size_t i = 0; i <= M; ++i) {
-//             for (size_t j = 0; j <= N; ++j) {
-//             whatWriteTo[i][j] = items[i][j]*num;
-//         }
-//     }
+
 // }
 
 
@@ -530,9 +416,7 @@ int main(/*int argc, char** argv*/) {
         }
     }
     
-    printf("time:%.10f, diff:%.10f\n", (end-start), max_);
+    printf("time:%.10f, max_diff:%.10f\n", (end-start), max_);
     
     return 0;
 }
-
-//mpicc -O3 -o imperative.o imperative_new.c && ./imperative.o 100 100 0.00001
