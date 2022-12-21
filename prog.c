@@ -380,43 +380,43 @@ int main(/*int argc, char** argv*/) {
         }
 
         // squared_difference = scalarProduct(tau_r, tau_r, M, N, h1, h2);
-        sum_ = 0.0;
-        #pragma dvm actual(sum_)
-        #pragma dvm region
-        {
-            #pragma dvm parallel([i][j] on r[i][j]) reduction(sum(sum_))
-            for (i = 0; i <= M; ++i) {
-                for (j = 0; j <= N; ++j) {
-                    sum_ = sum_ + h1*h2*ro(i, M)*ro(j, N)*tau*r[i][j] * tau*r[i][j];
-                }
-            }
-        }
+        // sum_ = 0.0;
+        // #pragma dvm actual(sum_)
+        // #pragma dvm region
+        // {
+        //     #pragma dvm parallel([i][j] on r[i][j]) reduction(sum(sum_))
+        //     for (i = 0; i <= M; ++i) {
+        //         for (j = 0; j <= N; ++j) {
+        //             sum_ = sum_ + h1*h2*ro(i, M)*ro(j, N)*tau*r[i][j] * tau*r[i][j];
+        //         }
+        //     }
+        // }
 
-        double squared_difference = sum_;
+        // double squared_difference = sum_;
     
-        if (count % 500 == 0)
-            printf("n:%d, diff:%.10f\n", count, sqrt(squared_difference));
+        // if (count % 500 == 0)
+        //     printf("n:%d, diff:%.10f\n", count, sqrt(squared_difference));
         count++;
     }
     
-    end = dvmh_wtime();
-    double max_ = 0.0;
-    #pragma dvm actual(max_)
-    #pragma dvm region
-    {
-        #pragma dvm parallel([i][j] on omega_next[i][j]) reduction(max(max_))
-        for (i = 0; i < M + 1; ++i) {
-            for (j = 0; j < N + 1; ++j) {
-                double item = fabs(omega_next[i][j] - u(h1*i, h2*j));
-                if (item > max_) {
-                    max_ = item;
-                }
+    // end = dvmh_wtime();
+    // double max_ = 0.0;
+    // #pragma dvm actual(max_)
+    // #pragma dvm region
+    // {
+    //     #pragma dvm parallel([i][j] on omega_next[i][j]) reduction(max(max_))
+    //     for (i = 0; i < M + 1; ++i) {
+    //         for (j = 0; j < N + 1; ++j) {
+    //             double item = fabs(omega_next[i][j] - u(h1*i, h2*j));
+    //             if (item > max_) {
+    //                 max_ = item;
+    //             }
                 
-            }
-        }
-    }
+    //         }
+    //     }
+    // }
     
-    printf("time:%.10f, max_diff:%.10f\n", (end-start), max_);
-    dvmh_barrier();
+    // printf("time:%.10f, max_diff:%.10f\n", (end-start), max_);
+    // dvmh_barrier();
     return 0;
 }
