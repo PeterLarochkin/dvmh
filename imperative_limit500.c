@@ -432,7 +432,7 @@ int main(/*int argc, char** argv*/) {
     getB();
 
     int count = 0;
-    while (squared_difference >= sq_eps && count < 2500)
+    while (squared_difference >= sq_eps && count < 3000)
     {
         #pragma dvm region
         {
@@ -473,6 +473,7 @@ int main(/*int argc, char** argv*/) {
         }
         // // squared_difference = scalarProduct(tau_r, tau_r, M, N, h1, h2);
         squared_difference = scalarProduct_tau_r_to_tau_r();
+        if (count % 100 == 0) printf("%.10f\n", squared_difference);
         count++;
     }
     
