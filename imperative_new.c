@@ -4,8 +4,6 @@
 #include <math.h>
 #include <time.h>
 
-
-
 const size_t M = 100;
 const size_t N = 100;
 const double epsilon = 0.001;
@@ -16,18 +14,17 @@ const double B1 = 0.0;
 const double B2 = 3.0;
 const double h1 = 4.0/M;
 const double h2 = 3.0/N;
-
 #pragma dvm array distribute [block][block]
 double B[M + 1][N + 1];
 #pragma dvm array align([i][j] with B[i][j])
 double omega_next[M + 1][N + 1];
-#pragma dvm array align([i][j] with B[i][j]) shadow[1:1][1:1]
+#pragma dvm array align([i][j] with B[i][j]), shadow[1:1][1:1]
 double r[M + 1][N + 1];
 #pragma dvm array align([i][j] with B[i][j])
 double A_r[M + 1][N + 1];
 #pragma dvm array align([i][j] with B[i][j])
 double A_omega[M + 1][N + 1];
-#pragma dvm array align([i][j] with B[i][j]) shadow[1:1][1:1]
+#pragma dvm array align([i][j] with B[i][j]), shadow[1:1][1:1]
 double omega[M + 1][N + 1];
 
 
