@@ -129,54 +129,54 @@ int main(/*int argc, char** argv*/) {
             }
         }
     }
-    // getB(B, M, N, h1, h2, A1, A2, B1, B2);
-    #pragma dvm region
-    {
-        #pragma dvm parallel([i][j] on B[i][j])
-        for (i = 1; i < M; ++i) {
-            for (int j = 1; j < N; ++j) {
-                // here is (7) equation works
-                B[i][j] = F(A1+ i*h1,B1+ j*h2);
-            }
-        }
+    // // getB(B, M, N, h1, h2, A1, A2, B1, B2);
+    // #pragma dvm region
+    // {
+    //     #pragma dvm parallel([i][j] on B[i][j])
+    //     for (i = 1; i < M; ++i) {
+    //         for (int j = 1; j < N; ++j) {
+    //             // here is (7) equation works
+    //             B[i][j] = F(A1+ i*h1,B1+ j*h2);
+    //         }
+    //     }
 
-        #pragma dvm parallel([i] on B[i][N])
-        for (i = 1; i <= M; ++i) {
-            if (i != M) {
-                B[i][N] = psi(A1+ i*h1, B1+ N*h2) * 2/h2 + F(A1 + i*h1, B1 + N*h2); 
-            } else {
-                B[M][N] = psi(A1+ M*h1, B1+ N*h2) * (2/h1 + 2/h2) + F(A1 + M*h1, B1 + N*h2);
-            }
+    //     #pragma dvm parallel([i] on B[i][N])
+    //     for (i = 1; i <= M; ++i) {
+    //         if (i != M) {
+    //             B[i][N] = psi(A1+ i*h1, B1+ N*h2) * 2/h2 + F(A1 + i*h1, B1 + N*h2); 
+    //         } else {
+    //             B[M][N] = psi(A1+ M*h1, B1+ N*h2) * (2/h1 + 2/h2) + F(A1 + M*h1, B1 + N*h2);
+    //         }
             
-        }
+    //     }
 
-        #pragma dvm parallel([i] on B[i][0])
-        for (i = 0; i < M; ++i) {   
-            if (i == 0) {
-                B[0][0] = psi(A1+ 0*h1, B1+ 0*h2) * (2/h1 + 2/h2) + F(A1 + 0*h1, B1 + 0*h2);
-            } else {
-                B[i][0] = psi(A1+ i*h1, B1+ 0*h2) * 2/h2 + F(A1 + i*h1, B1 + 0*h2);
-            }
-        }
+    //     #pragma dvm parallel([i] on B[i][0])
+    //     for (i = 0; i < M; ++i) {   
+    //         if (i == 0) {
+    //             B[0][0] = psi(A1+ 0*h1, B1+ 0*h2) * (2/h1 + 2/h2) + F(A1 + 0*h1, B1 + 0*h2);
+    //         } else {
+    //             B[i][0] = psi(A1+ i*h1, B1+ 0*h2) * 2/h2 + F(A1 + i*h1, B1 + 0*h2);
+    //         }
+    //     }
 
-        #pragma dvm parallel([j] on B[0][j])
-        for (j = 1; j <= N; ++j) {
-            if (j == N) {
-                B[0][N] = psi(A1+ 0*h1, B1+ N*h2) * (2/h1 + 2/h2) + F(A1 + 0*h1, B1 + N*h2);
-            } else {
-                B[0][j] = psi(A1+ 0*h1, B1+ j*h2) * 2/h1 + F(A1 + 0*h1, B1 + j*h2);
-            }
-        }
+    //     #pragma dvm parallel([j] on B[0][j])
+    //     for (j = 1; j <= N; ++j) {
+    //         if (j == N) {
+    //             B[0][N] = psi(A1+ 0*h1, B1+ N*h2) * (2/h1 + 2/h2) + F(A1 + 0*h1, B1 + N*h2);
+    //         } else {
+    //             B[0][j] = psi(A1+ 0*h1, B1+ j*h2) * 2/h1 + F(A1 + 0*h1, B1 + j*h2);
+    //         }
+    //     }
 
-        #pragma dvm parallel([j] on B[M][j])
-        for (j = 0; j < N; ++j) {
-            if (j == 0){
-                B[M][0] = psi(A1+ M*h1, B1+ 0*h2) * (2/h1 + 2/h2) + F(A1 + M*h1, B1 + 0*h2);
-            } else {
-                B[M][j] = psi(A1+ M*h1, B1+ j*h2) * 2/h1 + F(A1 + M*h1, B1 + j*h2);
-            }
-        } 
-    }
+    //     #pragma dvm parallel([j] on B[M][j])
+    //     for (j = 0; j < N; ++j) {
+    //         if (j == 0){
+    //             B[M][0] = psi(A1+ M*h1, B1+ 0*h2) * (2/h1 + 2/h2) + F(A1 + M*h1, B1 + 0*h2);
+    //         } else {
+    //             B[M][j] = psi(A1+ M*h1, B1+ j*h2) * 2/h1 + F(A1 + M*h1, B1 + j*h2);
+    //         }
+    //     } 
+    // }
 
     int count = 0;
     while (squared_difference >= sq_eps && count < 5000)
