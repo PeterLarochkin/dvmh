@@ -1,0 +1,5 @@
+#BSUB -n 20 -q normal
+#BSUB -W 00:05
+#BSUB -o "p20_40x40.out"
+#BSUB -e "p20_40x40.err"
+mpiexec ./imperative

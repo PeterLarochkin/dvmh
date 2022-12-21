@@ -434,11 +434,12 @@ int main(/*int argc, char** argv*/) {
     int count = 0;
     while (squared_difference >= sq_eps && count < 500)
     {
+        size_t i, j;
         #pragma dvm region
         {
             #pragma dvm parallel([i][j] on omega[i][j])
-            for (size_t i = 0; i <= M; ++i) {
-                for (size_t j = 0; j <= N; ++j) {
+            for (i = 0; i <= M; ++i) {
+                for (j = 0; j <= N; ++j) {
                     omega[i][j] = omega_next[i][j];
                 }
             }
