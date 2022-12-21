@@ -4,7 +4,7 @@ dvmdir='/polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys'
 export dvmbuild='Version 5.0, revision 8114, platform POLUS, build 37'
 
 #--------------- One can customize compiler options:
-export PCC='mpicc -O3 -fopenmp' # C compiler
+export PCC='mpicc -O5 -fopenmp' # C compiler
 # export PCC='mpixlc -qstrict -Ofast'
 # export PCXX='mpic++ -g -O3 -fopenmp ' # C++ compiler
 # export PFORT='mpif77 -g -O3 -fopenmp ' # Fortran compiler
