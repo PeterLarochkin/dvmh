@@ -46,7 +46,7 @@ double F(double x, double y) {
 
 
 
-double psi(double x, double y, double A1, double A2, double B1, double B2, double h1, double h2) {
+double psi(double x, double y) {
     
     if (x == A2 && B1<y && y<B2) {
         // 1
@@ -259,9 +259,9 @@ int main(/*int argc, char** argv*/) {
         #pragma dvm parallel([i] on B[i][N])
         for (i = 1; i <= M; ++i) {
             if (i != M) {
-                B[i][N] = psi(A1+ i*h1, B1+ N*h2, A1, A2, B1, B2, h1, h2) * 2/h2 + F(A1 + i*h1, B1 + N*h2); 
+                B[i][N] = psi(A1+ i*h1, B1+ N*h2) * 2/h2 + F(A1 + i*h1, B1 + N*h2); 
             } else {
-                B[M][N] = psi(A1+ M*h1, B1+ N*h2, A1, A2, B1, B2, h1, h2) * (2/h1 + 2/h2) + F(A1 + M*h1, B1 + N*h2);
+                B[M][N] = psi(A1+ M*h1, B1+ N*h2) * (2/h1 + 2/h2) + F(A1 + M*h1, B1 + N*h2);
             }
             
         }
@@ -269,27 +269,27 @@ int main(/*int argc, char** argv*/) {
         #pragma dvm parallel([i] on B[i][0])
         for (i = 0; i < M; ++i) {   
             if (i == 0) {
-                B[0][0] = psi(A1+ 0*h1, B1+ 0*h2, A1, A2, B1, B2, h1, h2) * (2/h1 + 2/h2) + F(A1 + 0*h1, B1 + 0*h2);
+                B[0][0] = psi(A1+ 0*h1, B1+ 0*h2) * (2/h1 + 2/h2) + F(A1 + 0*h1, B1 + 0*h2);
             } else {
-                B[i][0] = psi(A1+ i*h1, B1+ 0*h2, A1, A2, B1, B2, h1, h2) * 2/h2 + F(A1 + i*h1, B1 + 0*h2);
+                B[i][0] = psi(A1+ i*h1, B1+ 0*h2) * 2/h2 + F(A1 + i*h1, B1 + 0*h2);
             }
         }
 
         #pragma dvm parallel([j] on B[0][j])
         for (j = 1; j <= N; ++j) {
             if (j == N) {
-                B[0][N] = psi(A1+ 0*h1, B1+ N*h2, A1, A2, B1, B2, h1, h2) * (2/h1 + 2/h2) + F(A1 + 0*h1, B1 + N*h2);
+                B[0][N] = psi(A1+ 0*h1, B1+ N*h2) * (2/h1 + 2/h2) + F(A1 + 0*h1, B1 + N*h2);
             } else {
-                B[0][j] = psi(A1+ 0*h1, B1+ j*h2, A1, A2, B1, B2, h1, h2) * 2/h1 + F(A1 + 0*h1, B1 + j*h2);
+                B[0][j] = psi(A1+ 0*h1, B1+ j*h2) * 2/h1 + F(A1 + 0*h1, B1 + j*h2);
             }
         }
 
         #pragma dvm parallel([j] on B[M][j])
         for (j = 0; j < N; ++j) {
             if (j == 0){
-                B[M][0] = psi(A1+ M*h1, B1+ 0*h2, A1, A2, B1, B2, h1, h2) * (2/h1 + 2/h2) + F(A1 + M*h1, B1 + 0*h2);
+                B[M][0] = psi(A1+ M*h1, B1+ 0*h2) * (2/h1 + 2/h2) + F(A1 + M*h1, B1 + 0*h2);
             } else {
-                B[M][j] = psi(A1+ M*h1, B1+ j*h2, A1, A2, B1, B2, h1, h2) * 2/h1 + F(A1 + M*h1, B1 + j*h2);
+                B[M][j] = psi(A1+ M*h1, B1+ j*h2) * 2/h1 + F(A1 + M*h1, B1 + j*h2);
             }
         } 
     }
