@@ -4,8 +4,8 @@
 #include <math.h>
 #include <time.h>
 
-#define M (200)
-#define N (200)
+#define M (500)
+#define N (500)
 #define epsilon (0.000001)
 #define A1 (0.0)
 #define A2 (4.0)
