@@ -2,4 +2,4 @@
 #BSUB -W 00:05
 #BSUB -o "p8_500x500.out"
 #BSUB -e "p8_500x500.err"
-mpiexec ./imperative
+mpiexec ./imperative_new
