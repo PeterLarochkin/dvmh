@@ -501,7 +501,7 @@ int main(/*int argc, char** argv*/) {
             #pragma dvm parallel([i][j] on r[i][j]) reduction(sum(sum_))
             for (i = 0; i <= M; ++i) {
                 for (j = 0; j <= N; ++j) {
-                    squared_difference = squared_difference + h1*h2*ro(i, M)*ro(j, N)*tau*r[i][j] * tau*r[i][j];
+                    sum_ = sum_ + h1*h2*ro(i, M)*ro(j, N)*tau*r[i][j] * tau*r[i][j];
                 }
             }
         }
