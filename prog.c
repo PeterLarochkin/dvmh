@@ -179,7 +179,7 @@ int main(/*int argc, char** argv*/) {
     }
 
     int count = 0;
-    while (squared_difference >= sq_eps && count < 2500)
+    while (squared_difference >= sq_eps && count < 5000)
     {
         #pragma dvm region
         {
