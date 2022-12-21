@@ -3,3 +3,4 @@ imperative
 *.par
 gpu*
 MPI*
+core*
