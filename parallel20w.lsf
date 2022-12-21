@@ -1,5 +1,5 @@
-#BSUB -n 20 -q normal
-#BSUB -W 00:15
-#BSUB -o "p20_500x500.out"
-#BSUB -e "p20_500x500.err"
+#BSUB -n 8 -q normal
+#BSUB -W 00:05
+#BSUB -o "p8_500x500.out"
+#BSUB -e "p8_500x500.err"
 mpiexec ./imperative
