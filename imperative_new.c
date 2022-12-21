@@ -4,8 +4,8 @@
 #include <math.h>
 #include <time.h>
 
-const size_t M = 100;
-const size_t N = 100;
+#define M (100)
+#define N (100)
 const double epsilon = 0.001;
 
 const double A1 = 0.0;
