@@ -75,6 +75,7 @@ double psi(double x, double y) {
         return (h1*(x/(2*u)+u) + h2*(y/(2*u)+u)) / (h1 + h2);
     } else {
         printf("ERROR:(%.10f, %.10f)", x, y);
+        return 0.0;
     }  
 }
 
