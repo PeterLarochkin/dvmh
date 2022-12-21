@@ -4,8 +4,8 @@
 
 
 
-#define M (100)
-#define N (100)
+#define M (500)
+#define N (1000)
 #define h1 (4.0 / (double) M)
 #define h2 (3.0 / (double) N)
 #define A1 (0.0)
@@ -432,7 +432,7 @@ int main(/*int argc, char** argv*/) {
     getB();
 
     int count = 0;
-    while (squared_difference >= sq_eps && count < 500)
+    while (squared_difference >= sq_eps)
     {
         size_t i, j;
         #pragma dvm region
