@@ -396,7 +396,7 @@ int main(/*int argc, char** argv*/) {
 
         double squared_difference = sum_;
     
-        if (count % 500 == 0)
+        if (count % 300 == 0)
             printf("n:%d, diff:%.10f\n", count, sqrt(squared_difference));
         count++;
     }
