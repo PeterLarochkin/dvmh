@@ -394,5 +394,6 @@ int main() {
     
     printf("time:%.10f, max_diff:%.10f\n", (end-start), max_);
     fflush(NULL);
+    exit(1);
     return 0;
 }
