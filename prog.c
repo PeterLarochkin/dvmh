@@ -160,7 +160,7 @@ int main() {
     }
 
     int count = 0;
-    while (squared_difference >= sq_eps && count < 10)
+    while (squared_difference >= sq_eps && count < 100)
     {
         #pragma dvm region
         {
@@ -275,7 +275,7 @@ int main() {
                                     ( q(A1+ i*h1,B1+ N*h2) + 2/h2 ) * r[i][N] -
                                     1/(h1*h1)*(r[i+1][N] - r[i][N] - r[i][N]+ r[i-1][N]); 
                 } else {
-                    A_r[0][N] = -2/(h1*h1)*(r[1][N]- r[0][N])+
+                    A_r[i][N] = -2/(h1*h1)*(r[1][N]- r[0][N])+
                                 2/(h2*h2)*(r[0][N]- r[0][N-1])+
                                 (q(A1+ 0*h1,B1+ N*h2) + 2/h1 + 2/h2) * r[0][N];
                 }
@@ -370,7 +370,7 @@ int main() {
 
         double squared_difference = sum_;
     
-        if (count % 300 == 0)
+        if (count % 10 == 0)
             printf("n:%d, diff:%.10f\n", count, sqrt(squared_difference));
         count++;
     }
