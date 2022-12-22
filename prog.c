@@ -1,6 +1,6 @@
-#include <stdio.h>          /* printf */
-#include <string.h>         /* strcspn */
-#include <stdlib.h>         /* strtol */
+#include <stdio.h> 
+#include <string.h>
+#include <stdlib.h>
 #include <math.h>
 #include <time.h>
 
@@ -48,18 +48,18 @@ double u(double x, double y) {
 double psi(double x, double y) {
     
     if (x == A2 && B1<y && y<B2) {
-        // 1
+        
         double u_ = sqrt(4.0+x*y);
         return y/(2*u_)+u_;
     } else if (x == A1 && B1<y && y<B2) {
-        // 2
+        
         return -y/4+2;
     } else if (y==B2 && A1<x && x<A2) {
-        // 3
+        
         double u_ = sqrt(4.0+x*y);
         return x/(2*u_)+u_;
     } else if (y==B1 && A1<x && x<A2) {
-        // 4
+        
         return -x/4+2;
 
     } else if (x==A1 && y==B1 ) {
@@ -75,8 +75,10 @@ double psi(double x, double y) {
     } else if (x==A2 && y==B2 ) {
         double u = sqrt(4.0+x*y);
         return (h1*(x/(2*u)+u) + h2*(y/(2*u)+u)) / (h1 + h2);
+
+
     } else {
-        printf("ERROR:(%.10f, %.10f)", x, y);
+        return 0;
     }  
 }
 
@@ -109,13 +111,12 @@ int main() {
             }
         }
     }
-    // getB(B, M, N, h1, h2, A1, A2, B1, B2);
+    
     #pragma dvm region
     {
         #pragma dvm parallel([i][j] on B[i][j])
         for (i = 1; i < M; ++i) {
             for (int j = 1; j < N; ++j) {
-                // here is (7) equation works
                 B[i][j] = F(A1+ i*h1,B1+ j*h2);
             }
         }
@@ -159,7 +160,7 @@ int main() {
     }
 
     int count = 0;
-    while (squared_difference >= sq_eps && count < 1500)
+    while (squared_difference >= sq_eps && count < 1)
     {
         #pragma dvm region
         {
