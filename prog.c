@@ -369,9 +369,12 @@ int main() {
         }
 
         double squared_difference = sum_;
-    
-        if (count % 500 == 0)
+        
+        fflush(NULL);
+        if (count % 500 == 0) {
+            
             printf("n:%d, diff:%.10f\n", count, sqrt(squared_difference));
+        }
         count++;
     }
     
@@ -393,7 +396,7 @@ int main() {
     }
     
     printf("time:%.10f, max_diff:%.10f\n", (end-start), max_);
-    fflush(NULL);
+    
     exit(1);
     return 0;
 }
