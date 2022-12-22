@@ -369,10 +369,9 @@ int main() {
         }
 
         double squared_difference = sum_;
-        
+
         fflush(NULL);
         if (count % 500 == 0) {
-            
             printf("n:%d, diff:%.10f\n", count, sqrt(squared_difference));
         }
         count++;
