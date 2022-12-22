@@ -371,7 +371,7 @@ int main() {
         double squared_difference = sum_;
 
         fflush(NULL);
-        if (count % 50 == 0) {
+        if (count % 10 == 0) {
             printf("n:%d, diff:%.10f\n", count, sqrt(squared_difference));
         }
         count++;
