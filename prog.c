@@ -88,30 +88,6 @@ double ro(int index, int M_or_N) {
     }
 }
 
-// void applyA(double** whatApplyTo, double** whatWriteTo, int M, int N, double h1, double h2, double A1, double B1) {
-
-// }
-
-// void getB(double** whatWriteTo, int M, int N, double h1, double h2, double A1, double A2, double B1, double B2) {
-
-// }
-
-// void minus(double** first, double** second, double** whatWriteTo, double M, double N) {
-
-// }
-
-
-
-// double scalarProduct(double** first, double** second, double M, double N, double h1, double h2) {
-
-// }
-
-// void multiplyByNum(double** items, double num, double** whatWriteTo, double M, double N) {
-
-// }
-
-
-
 
 int main() {
 
@@ -398,7 +374,7 @@ int main() {
 
         double squared_difference = sum_;
     
-        if (count % 100 == 0)
+        if (count % 300 == 0)
             printf("n:%d, diff:%.10f\n", count, sqrt(squared_difference));
         count++;
     }
