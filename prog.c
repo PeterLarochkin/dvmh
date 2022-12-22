@@ -160,7 +160,7 @@ int main() {
     }
 
     int count = 0;
-    while (squared_difference >= sq_eps && count < 10)
+    while (squared_difference >= sq_eps && count < 500)
     {
         #pragma dvm region
         {
@@ -371,7 +371,7 @@ int main() {
         double squared_difference = sum_;
 
         fflush(NULL);
-        if (count % 500 == 0) {
+        if (count % 50 == 0) {
             printf("n:%d, diff:%.10f\n", count, sqrt(squared_difference));
         }
         count++;
@@ -393,7 +393,8 @@ int main() {
             }
         }
     }
-    
+
+    fflush(NULL);
     printf("time:%.10f, max_diff:%.10f\n", (end-start), max_);
     
     exit(1);
