@@ -1,5 +1,5 @@
 .vscode
-imperative
+prog
 *.par
 ./gpu*
 ./MPI*
