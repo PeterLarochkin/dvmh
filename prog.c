@@ -160,7 +160,7 @@ int main() {
     }
 
     int count = 0;
-    while (squared_difference >= sq_eps && count < 1)
+    while (squared_difference >= sq_eps && count < 10)
     {
         #pragma dvm region
         {
