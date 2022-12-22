@@ -93,7 +93,7 @@ double ro(int index, int M_or_N) {
 
 int main() {
 
-
+    return 0;
     double sum_ = 0.0;
     double tau = 0.0;
     double start = dvmh_wtime(); 
@@ -375,7 +375,7 @@ int main() {
             printf("n:%d, diff:%.10f\n", count, sqrt(squared_difference));
         }
         count++;
-        return 0;
+        
     }
     
     end = dvmh_wtime();
