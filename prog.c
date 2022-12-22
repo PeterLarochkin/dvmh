@@ -93,7 +93,6 @@ double ro(int index, int M_or_N) {
 
 int main() {
 
-    return 0;
     double sum_ = 0.0;
     double tau = 0.0;
     double start = dvmh_wtime(); 
@@ -398,6 +397,6 @@ int main() {
     fflush(NULL);
     printf("time:%.10f, max_diff:%.10f\n", (end-start), max_);
     
-    exit(1);
+    // exit(1);
     return 0;
 }
