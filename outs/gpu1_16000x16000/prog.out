@@ -1,0 +1,73 @@
+Sender: LSF System <lsfadmin@polus-c2-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1019345: <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel22-618-1-04 #;#BSUB -x;#BSUB -n 1;#BSUB -R span[ptile=1];#BSUB -W 00:05;#BSUB -gpu "num=2:mode=shared:mps=yes";#BSUB -o prog.1.1.%J.out;#BSUB -e prog.1.1.%J.err; mpiexec prog.1.1> in cluster <MSUCluster> Done
+
+Job <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel22-618-1-04 #;#BSUB -x;#BSUB -n 1;#BSUB -R span[ptile=1];#BSUB -W 00:05;#BSUB -gpu "num=2:mode=shared:mps=yes";#BSUB -o prog.1.1.%J.out;#BSUB -e prog.1.1.%J.err; mpiexec prog.1.1> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel22-618-1-04> in cluster <MSUCluster> at Thu Dec 22 04:39:30 2022
+Job was executed on host(s) <polus-c2-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel22-618-1-04> in cluster <MSUCluster> at Thu Dec 22 08:09:17 2022
+</home_edu/edu-cmc-skmodel22-618-1/edu-cmc-skmodel22-618-1-04> was used as the home directory.
+</home_edu/edu-cmc-skmodel22-618-1/edu-cmc-skmodel22-618-1-04/homework3/dvmh> was used as the working directory.
+Started at Thu Dec 22 08:09:17 2022
+Terminated at Thu Dec 22 08:12:15 2022
+Results reported at Thu Dec 22 08:12:15 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel22-618-1-04 #
+#BSUB -x
+#BSUB -n 1
+#BSUB -R span[ptile=1]
+#BSUB -W 00:05
+#BSUB -gpu "num=2:mode=shared:mps=yes"
+#BSUB -o prog.1.1.%J.out
+#BSUB -e prog.1.1.%J.err
+ mpiexec prog.1.1
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   162.00 sec.
+    Max Memory :                                 11987 MB
+    Average Memory :                             8196.96 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              15
+    Max Threads :                                30
+    Run time :                                   178 sec.
+    Turnaround time :                            12765 sec.
+
+The output (if any) follows:
+
+--------------------------------------------------------------------------
+A process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.
+
+The process that invoked fork was:
+
+  Local host:          [[11170,1],0] (PID 61456)
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+n:0, diff:0.0000054574
+n:300, diff:0.0000007047
+n:600, diff:0.0000006044
+n:900, diff:0.0000005534
+n:1200, diff:0.0000005205
+time:134.9967088094, max_diff:1.9905813785
+ 
+
+
+PS:
+
+Read file <prog.1.1.1019345.err> for stderr output of this job.
+

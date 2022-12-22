@@ -1,0 +1,185 @@
+*** RTS stack trace:
+*** RTS stack trace:
+*** RTS stack trace:
+*** RTS stack trace:
+*** RTS stack trace:
+#0 prog.1.1() [0x10163c88]
+#0 prog.1.1() [0x10163c88]
+#0 prog.1.1() [0x10163c88]
+#0 prog.1.1() [0x10163c88]
+#0 prog.1.1() [0x10163c88]
+#1 prog.1.1() [0x10163f98]
+#2 [0x100000050478]
+#1 prog.1.1() [0x10163f98]
+#2 [0x100000050478]
+#1 prog.1.1() [0x10163f98]
+#2 [0x100000050478]
+#1 prog.1.1() [0x10163f98]
+#2 [0x100000050478]
+#1 prog.1.1() [0x10163f98]
+#2 [0x100000050478]
+#3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+#3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+#3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+#3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+#3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+#4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+#4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+#4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+#5 /lib64/libc.so.6(_IO_proc_open+0x124) [0x10000303ad14]
+#4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+#5 /lib64/libc.so.6(_IO_proc_open+0x124) [0x10000303ad14]
+#6 /lib64/libc.so.6(popen+0x78) [0x10000303b058]
+#4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+#5 /lib64/libc.so.6(_IO_proc_open+0x124) [0x10000303ad14]
+#5 /lib64/libc.so.6(_IO_proc_open+0x124) [0x10000303ad14]
+#6 /lib64/libc.so.6(popen+0x78) [0x10000303b058]
+#7 prog.1.1() [0x101bb988]
+#5 /lib64/libc.so.6(_IO_proc_open+0x124) [0x10000303ad14]
+#6 /lib64/libc.so.6(popen+0x78) [0x10000303b058]
+#6 /lib64/libc.so.6(popen+0x78) [0x10000303b058]
+#8 prog.1.1() [0x101ffb30]
+#7 prog.1.1() [0x101bb988]
+#7 prog.1.1() [0x101bb988]
+#6 /lib64/libc.so.6(popen+0x78) [0x10000303b058]
+#8 prog.1.1() [0x101ffb30]
+#7 prog.1.1() [0x101bb988]
+#9 prog.1.1() [0x1016ccd8]
+#8 prog.1.1() [0x101ffb30]
+#9 prog.1.1() [0x1016ccd8]
+#7 prog.1.1() [0x101bb988]
+#9 prog.1.1() [0x1016ccd8]
+#10 prog.1.1() [0x1023d434]
+#8 prog.1.1() [0x101ffb30]
+#10 prog.1.1() [0x1023d434]
+#11 prog.1.1() [0x1023d488]
+#8 prog.1.1() [0x101ffb30]
+#11 prog.1.1() [0x1023d488]
+#10 prog.1.1() [0x1023d434]
+#9 prog.1.1() [0x1016ccd8]
+#12 prog.1.1() [0x101246f0]
+#9 prog.1.1() [0x1016ccd8]
+#12 prog.1.1() [0x101246f0]
+#11 prog.1.1() [0x1023d488]
+#10 prog.1.1() [0x1023d434]
+#13 /lib64/libpthread.so.0(+0x8af4) [0x100002f88af4]
+#10 prog.1.1() [0x1023d434]
+#13 /lib64/libpthread.so.0(+0x8af4) [0x100002f88af4]
+#11 prog.1.1() [0x1023d488]
+#12 prog.1.1() [0x101246f0]
+#14 /lib64/libc.so.6(clone+0xe4) [0x1000030e4ef4]
+USRFILE=prog.c;  USRLINE=114;
+SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+[polus-c4-ib:10443] *** Process received signal ***
+[polus-c4-ib:10443] Signal: Segmentation fault (11)
+[polus-c4-ib:10443] Signal code: Address not mapped (1)
+[polus-c4-ib:10443] Failing at address: 0xc10
+[polus-c4-ib:10443] [ 0] prog.1.1[0x10164018]
+[polus-c4-ib:10443] [ 1] [0x100000050478]
+[polus-c4-ib:10443] [ 2] /opt/ibm/lib/libxlsmp.so.1(+0x94728)[0x100002c74728]
+[polus-c4-ib:10443] [ 3] /lib64/libc.so.6(__libc_fork+0x270)[0x10000309b5b0]
+[polus-c4-ib:10443] [ 4] /lib64/libc.so.6(_IO_proc_open+0x124)[0x10000303ad14]
+[polus-c4-ib:10443] [ 5] /lib64/libc.so.6(popen+0x78)[0x10000303b058]
+[polus-c4-ib:10443] [ 6] prog.1.1[0x101bb988]
+[polus-c4-ib:10443] [ 7] prog.1.1[0x101ffb30]
+[polus-c4-ib:10443] [ 8] prog.1.1[0x1016ccd8]
+[polus-c4-ib:10443] [ 9] prog.1.1[0x1023d434]
+[polus-c4-ib:10443] [10] prog.1.1[0x1023d488]
+[polus-c4-ib:10443] [11] prog.1.1[0x101246f0]
+[polus-c4-ib:10443] [12] /lib64/libpthread.so.0(+0x8af4)[0x100002f88af4]
+[polus-c4-ib:10443] [13] /lib64/libc.so.6(clone+0xe4)[0x1000030e4ef4]
+[polus-c4-ib:10443] *** End of error message ***
+#13 /lib64/libpthread.so.0(+0x8af4) [0x100002f88af4]
+#14 /lib64/libc.so.6(clone+0xe4) [0x1000030e4ef4]
+USRFILE=prog.c;  USRLINE=114;
+SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+[polus-c4-ib:10444] *** Process received signal ***
+[polus-c4-ib:10444] Signal: Segmentation fault (11)
+[polus-c4-ib:10444] Signal code: Address not mapped (1)
+[polus-c4-ib:10444] Failing at address: 0xc10
+[polus-c4-ib:10444] [ 0] prog.1.1[0x10164018]
+[polus-c4-ib:10444] [ 1] [0x100000050478]
+[polus-c4-ib:10444] [ 2] /opt/ibm/lib/libxlsmp.so.1(+0x94728)[0x100002c74728]
+[polus-c4-ib:10444] [ 3] /lib64/libc.so.6(__libc_fork+0x270)[0x10000309b5b0]
+[polus-c4-ib:10444] [ 4] /lib64/libc.so.6(_IO_proc_open+0x124)[0x10000303ad14]
+[polus-c4-ib:10444] [ 5] /lib64/libc.so.6(popen+0x78)[0x10000303b058]
+[polus-c4-ib:10444] [ 6] prog.1.1[0x101bb988]
+[polus-c4-ib:10444] [ 7] prog.1.1[0x101ffb30]
+[polus-c4-ib:10444] [ 8] prog.1.1[0x1016ccd8]
+[polus-c4-ib:10444] [ 9] prog.1.1[0x1023d434]
+[polus-c4-ib:10444] [10] prog.1.1[0x1023d488]
+[polus-c4-ib:10444] [11] prog.1.1[0x101246f0]
+[polus-c4-ib:10444] [12] /lib64/libpthread.so.0(+0x8af4)[0x100002f88af4]
+[polus-c4-ib:10444] [13] /lib64/libc.so.6(clone+0xe4)[0x1000030e4ef4]
+[polus-c4-ib:10444] *** End of error message ***
+#12 prog.1.1() [0x101246f0]
+#11 prog.1.1() [0x1023d488]
+#14 /lib64/libc.so.6(clone+0xe4) [0x1000030e4ef4]
+USRFILE=prog.c;  USRLINE=114;
+SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+[polus-c4-ib:10442] *** Process received signal ***
+[polus-c4-ib:10442] Signal: Segmentation fault (11)
+[polus-c4-ib:10442] Signal code: Address not mapped (1)
+[polus-c4-ib:10442] Failing at address: 0xc10
+[polus-c4-ib:10442] [ 0] prog.1.1[0x10164018]
+[polus-c4-ib:10442] [ 1] [0x100000050478]
+[polus-c4-ib:10442] [ 2] /opt/ibm/lib/libxlsmp.so.1(+0x94728)[0x100002c74728]
+[polus-c4-ib:10442] [ 3] /lib64/libc.so.6(__libc_fork+0x270)[0x10000309b5b0]
+[polus-c4-ib:10442] [ 4] /lib64/libc.so.6(_IO_proc_open+0x124)[0x10000303ad14]
+[polus-c4-ib:10442] [ 5] /lib64/libc.so.6(popen+0x78)[0x10000303b058]
+[polus-c4-ib:10442] [ 6] prog.1.1[0x101bb988]
+[polus-c4-ib:10442] [ 7] prog.1.1[0x101ffb30]
+[polus-c4-ib:10442] [ 8] prog.1.1[0x1016ccd8]
+[polus-c4-ib:10442] [ 9] prog.1.1[0x1023d434]
+[polus-c4-ib:10442] [10] prog.1.1[0x1023d488]
+[polus-c4-ib:10442] [11] prog.1.1[0x101246f0]
+[polus-c4-ib:10442] [12] /lib64/libpthread.so.0(+0x8af4)[0x100002f88af4]
+[polus-c4-ib:10442] [13] /lib64/libc.so.6(clone+0xe4)[0x1000030e4ef4]
+[polus-c4-ib:10442] *** End of error message ***
+#12 prog.1.1() [0x101246f0]
+#13 /lib64/libpthread.so.0(+0x8af4) [0x100002f88af4]
+#14 /lib64/libc.so.6(clone+0xe4) [0x1000030e4ef4]
+USRFILE=prog.c;  USRLINE=114;
+SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+[polus-c4-ib:10468] *** Process received signal ***
+[polus-c4-ib:10468] Signal: Segmentation fault (11)
+[polus-c4-ib:10468] Signal code: Address not mapped (1)
+[polus-c4-ib:10468] Failing at address: 0xc10
+[polus-c4-ib:10468] [ 0] prog.1.1[0x10164018]
+[polus-c4-ib:10468] [ 1] [0x100000050478]
+[polus-c4-ib:10468] [ 2] /opt/ibm/lib/libxlsmp.so.1(+0x94728)[0x100002c74728]
+[polus-c4-ib:10468] [ 3] /lib64/libc.so.6(__libc_fork+0x270)[0x10000309b5b0]
+[polus-c4-ib:10468] [ 4] /lib64/libc.so.6(_IO_proc_open+0x124)[0x10000303ad14]
+[polus-c4-ib:10468] [ 5] /lib64/libc.so.6(popen+0x78)[0x10000303b058]
+[polus-c4-ib:10468] [ 6] prog.1.1[0x101bb988]
+[polus-c4-ib:10468] [ 7] prog.1.1[0x101ffb30]
+[polus-c4-ib:10468] [ 8] prog.1.1[0x1016ccd8]
+[polus-c4-ib:10468] [ 9] prog.1.1[0x1023d434]
+[polus-c4-ib:10468] [10] prog.1.1[0x1023d488]
+[polus-c4-ib:10468] [11] prog.1.1[0x101246f0]
+[polus-c4-ib:10468] [12] /lib64/libpthread.so.0(+0x8af4)[0x100002f88af4]
+[polus-c4-ib:10468] [13] /lib64/libc.so.6(clone+0xe4)[0x1000030e4ef4]
+[polus-c4-ib:10468] *** End of error message ***
+#13 /lib64/libpthread.so.0(+0x8af4) [0x100002f88af4]
+#14 /lib64/libc.so.6(clone+0xe4) [0x1000030e4ef4]
+USRFILE=prog.c;  USRLINE=114;
+SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+[polus-c4-ib:10445] *** Process received signal ***
+[polus-c4-ib:10445] Signal: Segmentation fault (11)
+[polus-c4-ib:10445] Signal code: Address not mapped (1)
+[polus-c4-ib:10445] Failing at address: 0xc10
+[polus-c4-ib:10445] [ 0] prog.1.1[0x10164018]
+[polus-c4-ib:10445] [ 1] [0x100000050478]
+[polus-c4-ib:10445] [ 2] /opt/ibm/lib/libxlsmp.so.1(+0x94728)[0x100002c74728]
+[polus-c4-ib:10445] [ 3] /lib64/libc.so.6(__libc_fork+0x270)[0x10000309b5b0]
+[polus-c4-ib:10445] [ 4] /lib64/libc.so.6(_IO_proc_open+0x124)[0x10000303ad14]
+[polus-c4-ib:10445] [ 5] /lib64/libc.so.6(popen+0x78)[0x10000303b058]
+[polus-c4-ib:10445] [ 6] prog.1.1[0x101bb988]
+[polus-c4-ib:10445] [ 7] prog.1.1[0x101ffb30]
+[polus-c4-ib:10445] [ 8] prog.1.1[0x1016ccd8]
+[polus-c4-ib:10445] [ 9] prog.1.1[0x1023d434]
+[polus-c4-ib:10445] [10] prog.1.1[0x1023d488]
+[polus-c4-ib:10445] [11] prog.1.1[0x101246f0]
+[polus-c4-ib:10445] [12] /lib64/libpthread.so.0(+0x8af4)[0x100002f88af4]
+[polus-c4-ib:10445] [13] /lib64/libc.so.6(clone+0xe4)[0x1000030e4ef4]
+[polus-c4-ib:10445] *** End of error message ***

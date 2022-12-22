@@ -1,0 +1,94 @@
+Processor system=1*1
+Statistics has been accumulated on DVM-system version 5.0, platform POLUS
+Analyzer is executing on DVM-system version 5.0, platform POLUS
+-------------------------------------------------------------------------
+INTERVAL ( NLINE=27 SOURCE=prog.c ) LEVEL=0  EXE_COUNT=1
+--- The main characteristics --- 
+Parallelization efficiency      0.9997 
+Execution time                 69.2549 
+Processors                           1
+Threads amount                       1
+Total time                     69.2549
+Productive time                69.2357 ( CPU= 68.9892 Sys= 0.2465 I/O= 0.0000 )
+Lost  time                      0.0192 
+   Communication                0.0192 ( Real_sync= 0.0000 Starts= 0.0000 )
+Overlap                         0.0023
+Productive time GPU           127.6267
+Lost time GPU                  17.8588
+                  Nop   Communic    Overlap 
+Reduction        4501     0.0192     0.0006 
+Shadow          15000     0.0000     0.0017 
+--- The comparative characteristics --- 
+                              Tmin N proc      Tmax N proc      Tmid
+Lost time                   0.0192     1     0.0192     1     0.0192 
+Communication               0.0192     1     0.0192     1     0.0192 
+Overlap                     0.0023     1     0.0023     1     0.0023 
+Execution time             69.2549     1    69.2549     1    69.2549 
+User CPU time              68.9892     1    68.9892     1    68.9892 
+Sys. CPU time               0.2465     1     0.2465     1     0.2465 
+Productive time GPU       127.6267     1   127.6267     1   127.6267 
+Lost time GPU              17.8588     1    17.8588     1    17.8588 
+Processors                       1     1          1     1          1 
+                      Communic          Overlap  
+Reduction       Tmin    0.0192     1     0.0006     1 
+Reduction       Tmax    0.0192     1     0.0006     1 
+Reduction       Tmid    0.0192           0.0006       
+Shadow          Tmin    0.0000     1     0.0017     1 
+Shadow          Tmax    0.0000     1     0.0017     1 
+Shadow          Tmid    0.0000           0.0017       
+--- The execution characteristics --- 
+                                1 
+Lost time                  0.0192 
+Communication              0.0192 
+Overlap                    0.0023 
+Execution time            69.2549 
+User CPU time             68.9892 
+Sys. CPU time              0.2465 
+Productive time GPU      127.6267 
+Lost time GPU             17.8588 
+Processors                      1 
+           Communication          
+Reduction                  0.0192 
+           Overlap                
+Reduction                  0.0006 
+Shadow                     0.0017 
+
+
+--- The GPU characteristics --- 
+ ┌───────────────┐
+ │ Proc: #1      │
+ └─────┬─────────┘
+       │
+   ┌───┴───────────────────────────┐
+   │ GPU #1 (Tesla P100-SXM2-16GB) │
+   ├───────────────────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────┐
+   │                                          #           Min           Max           Sum       Average    Productive          Lost │
+   ├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+   │ [Shadow] Copy GPU to GPU              6000      125.008K      125.008K      732.468M      125.008K             -       0.2022s │
+   │ [Region IN] Copy CPU to GPU           3006            8B      976.746M        5.723G        1.950M       0.4452s             - │
+   │ Loop execution                       21006        0.0000        0.0100       63.1283        0.0030      63.1283s             - │
+   │ Reduction                             4501        0.0018        0.0020        7.9511        0.0018             -       7.9511s │
+   │ Page lock host memory                 6006        0.0001        0.0112        0.7694        0.0001             -       0.7694s │
+   ├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+   │ Productive time:    63.5735s                                                                                                   │
+   │ Lost time      :     8.9227s                                                                                                   │
+   └───┬────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+   ┌───┴───────────────────────────┐
+   │ GPU #2 (Tesla P100-SXM2-16GB) │
+   ├───────────────────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────┐
+   │                                          #           Min           Max           Sum       Average    Productive          Lost │
+   ├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+   │ [Shadow] Copy GPU to GPU              6000      125.008K      125.008K      732.468M      125.008K             -       0.2022s │
+   │ [Region IN] Copy CPU to GPU           3006            8B      976.868M        5.724G        1.950M       0.5315s             - │
+   │ Loop execution                       21006        0.0000        0.0100       63.5217        0.0030      63.5217s             - │
+   │ Reduction                             4501        0.0018        0.0021        7.9644        0.0018             -       7.9644s │
+   │ Page lock host memory                 6006        0.0001        0.0112        0.7694        0.0001             -       0.7694s │
+   ├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+   │ Productive time:    64.0532s                                                                                                   │
+   │ Lost time      :     8.9361s                                                                                                   │
+   └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+-------------------------------------------------------------------------
+Name (number) and performance time of processors
+polus-c4-ib.bmc.hpc.cs.msu.ru(1) 0.382787
+min - polus-c4-ib.bmc.hpc.cs.msu.ru(1) 0.382787; max - polus-c4-ib.bmc.hpc.cs.msu.ru(1) 0.382787; mid - 0.382787

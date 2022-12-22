@@ -1,6 +1,6 @@
 .vscode
 imperative
 *.par
-gpu*
+./gpu*
 MPI*
 core*

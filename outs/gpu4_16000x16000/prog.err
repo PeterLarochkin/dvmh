@@ -1,0 +1,2 @@
+[polus-c4-ib.bmc.hpc.cs.msu.ru:31313] 1 more process has sent help message help-opal-runtime.txt / opal_init:warn-fork
+[polus-c4-ib.bmc.hpc.cs.msu.ru:31313] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
