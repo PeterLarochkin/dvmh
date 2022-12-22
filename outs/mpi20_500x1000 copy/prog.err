@@ -1,0 +1,1107 @@
+04: *** RTS stack trace:
+04: *** RTS stack trace:
+04: *** RTS stack trace:
+03: *** RTS stack trace:
+04: *** RTS stack trace:
+03: *** RTS stack trace:
+04: *** RTS stack trace:
+03: *** RTS stack trace:
+03: *** RTS stack trace:
+03: *** RTS stack trace:
+16: *** RTS stack trace:
+16: *** RTS stack trace:
+16: *** RTS stack trace:
+16: *** RTS stack trace:
+16: *** RTS stack trace:
+02: *** RTS stack trace:
+02: *** RTS stack trace:
+02: *** RTS stack trace:
+02: *** RTS stack trace:
+02: *** RTS stack trace:
+05: *** RTS stack trace:
+05: *** RTS stack trace:
+05: *** RTS stack trace:
+05: *** RTS stack trace:
+05: *** RTS stack trace:
+11: *** RTS stack trace:
+11: *** RTS stack trace:
+11: *** RTS stack trace:
+11: *** RTS stack trace:
+11: *** RTS stack trace:
+12: *** RTS stack trace:
+12: *** RTS stack trace:
+12: *** RTS stack trace:
+12: *** RTS stack trace:
+12: *** RTS stack trace:
+10: *** RTS stack trace:
+10: *** RTS stack trace:
+18: *** RTS stack trace:
+18: *** RTS stack trace:
+18: *** RTS stack trace:
+18: *** RTS stack trace:
+10: *** RTS stack trace:
+09: *** RTS stack trace:
+15: *** RTS stack trace:
+19: *** RTS stack trace:
+06: *** RTS stack trace:
+14: *** RTS stack trace:
+17: *** RTS stack trace:
+00: *** RTS stack trace:
+07: *** RTS stack trace:
+01: *** RTS stack trace:
+13: *** RTS stack trace:
+10: *** RTS stack trace:
+09: *** RTS stack trace:
+15: *** RTS stack trace:
+18: *** RTS stack trace:
+08: *** RTS stack trace:
+00: *** RTS stack trace:
+06: *** RTS stack trace:
+19: *** RTS stack trace:
+15: *** RTS stack trace:
+13: *** RTS stack trace:
+00: *** RTS stack trace:
+14: *** RTS stack trace:
+09: *** RTS stack trace:
+01: *** RTS stack trace:
+17: *** RTS stack trace:
+07: *** RTS stack trace:
+13: *** RTS stack trace:
+10: *** RTS stack trace:
+15: *** RTS stack trace:
+06: *** RTS stack trace:
+08: *** RTS stack trace:
+14: *** RTS stack trace:
+00: *** RTS stack trace:
+09: *** RTS stack trace:
+01: *** RTS stack trace:
+13: *** RTS stack trace:
+07: *** RTS stack trace:
+19: *** RTS stack trace:
+17: *** RTS stack trace:
+08: *** RTS stack trace:
+00: *** RTS stack trace:
+14: *** RTS stack trace:
+07: *** RTS stack trace:
+09: *** RTS stack trace:
+14: *** RTS stack trace:
+06: *** RTS stack trace:
+07: *** RTS stack trace:
+15: *** RTS stack trace:
+06: *** RTS stack trace:
+13: *** RTS stack trace:
+01: *** RTS stack trace:
+19: *** RTS stack trace:
+17: *** RTS stack trace:
+19: *** RTS stack trace:
+01: *** RTS stack trace:
+08: *** RTS stack trace:
+17: *** RTS stack trace:
+08: *** RTS stack trace:
+[polus-c3-ib.bmc.hpc.cs.msu.ru:120947] 19 more processes have sent help message help-opal-runtime.txt / opal_init:warn-fork
+[polus-c3-ib.bmc.hpc.cs.msu.ru:120947] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+16: #0 prog.20.1() [0x10163b28]
+02: #0 prog.20.1() [0x10163b28]
+01: #0 prog.20.1() [0x10163b28]
+12: #0 prog.20.1() [0x10163b28]
+03: #0 prog.20.1() [0x10163b28]
+13: #0 prog.20.1() [0x10163b28]
+04: #0 prog.20.1() [0x10163b28]
+12: #0 prog.20.1() [0x10163b28]
+05: #0 prog.20.1() [0x10163b28]
+04: #0 prog.20.1() [0x10163b28]
+18: #0 prog.20.1() [0x10163b28]
+14: #0 prog.20.1() [0x10163b28]
+12: #0 prog.20.1() [0x10163b28]
+05: #0 prog.20.1() [0x10163b28]
+16: #0 prog.20.1() [0x10163b28]
+12: #0 prog.20.1() [0x10163b28]
+19: #0 prog.20.1() [0x10163b28]
+05: #0 prog.20.1() [0x10163b28]
+17: #0 prog.20.1() [0x10163b28]
+01: #0 prog.20.1() [0x10163b28]
+02: #0 prog.20.1() [0x10163b28]
+01: #0 prog.20.1() [0x10163b28]
+16: #0 prog.20.1() [0x10163b28]
+16: #0 prog.20.1() [0x10163b28]
+18: #0 prog.20.1() [0x10163b28]
+09: #0 prog.20.1() [0x10163b28]
+16: #0 prog.20.1() [0x10163b28]
+04: #0 prog.20.1() [0x10163b28]
+13: #0 prog.20.1() [0x10163b28]
+02: #0 prog.20.1() [0x10163b28]
+04: #0 prog.20.1() [0x10163b28]
+07: #0 prog.20.1() [0x10163b28]
+03: #0 prog.20.1() [0x10163b28]
+15: #0 prog.20.1() [0x10163b28]
+02: #0 prog.20.1() [0x10163b28]
+10: #0 prog.20.1() [0x10163b28]
+15: #0 prog.20.1() [0x10163b28]
+14: #0 prog.20.1() [0x10163b28]
+15: #0 prog.20.1() [0x10163b28]
+11: #0 prog.20.1() [0x10163b28]
+18: #0 prog.20.1() [0x10163b28]
+17: #0 prog.20.1() [0x10163b28]
+07: #0 prog.20.1() [0x10163b28]
+03: #0 prog.20.1() [0x10163b28]
+12: #0 prog.20.1() [0x10163b28]
+08: #0 prog.20.1() [0x10163b28]
+18: #0 prog.20.1() [0x10163b28]
+14: #0 prog.20.1() [0x10163b28]
+15: #0 prog.20.1() [0x10163b28]
+15: #0 prog.20.1() [0x10163b28]
+13: #0 prog.20.1() [0x10163b28]
+06: #0 prog.20.1() [0x10163b28]
+06: #0 prog.20.1() [0x10163b28]
+06: #0 prog.20.1() [0x10163b28]
+06: #0 prog.20.1() [0x10163b28]
+17: #0 prog.20.1() [0x10163b28]
+00: #0 prog.20.1() [0x10163b28]
+00: #0 prog.20.1() [0x10163b28]
+00: #0 prog.20.1() [0x10163b28]
+00: #0 prog.20.1() [0x10163b28]
+00: #0 prog.20.1() [0x10163b28]
+11: #0 prog.20.1() [0x10163b28]
+11: #0 prog.20.1() [0x10163b28]
+11: #0 prog.20.1() [0x10163b28]
+07: #0 prog.20.1() [0x10163b28]
+03: #0 prog.20.1() [0x10163b28]
+14: #0 prog.20.1() [0x10163b28]
+10: #0 prog.20.1() [0x10163b28]
+10: #0 prog.20.1() [0x10163b28]
+09: #0 prog.20.1() [0x10163b28]
+11: #0 prog.20.1() [0x10163b28]
+08: #0 prog.20.1() [0x10163b28]
+19: #0 prog.20.1() [0x10163b28]
+09: #0 prog.20.1() [0x10163b28]
+04: #0 prog.20.1() [0x10163b28]
+10: #0 prog.20.1() [0x10163b28]
+10: #0 prog.20.1() [0x10163b28]
+05: #0 prog.20.1() [0x10163b28]
+02: #0 prog.20.1() [0x10163b28]
+17: #0 prog.20.1() [0x10163b28]
+05: #0 prog.20.1() [0x10163b28]
+08: #0 prog.20.1() [0x10163b28]
+18: #0 prog.20.1() [0x10163b28]
+06: #0 prog.20.1() [0x10163b28]
+13: #0 prog.20.1() [0x10163b28]
+13: #0 prog.20.1() [0x10163b28]
+09: #0 prog.20.1() [0x10163b28]
+03: #0 prog.20.1() [0x10163b28]
+14: #0 prog.20.1() [0x10163b28]
+09: #0 prog.20.1() [0x10163b28]
+07: #0 prog.20.1() [0x10163b28]
+19: #0 prog.20.1() [0x10163b28]
+19: #0 prog.20.1() [0x10163b28]
+08: #0 prog.20.1() [0x10163b28]
+01: #0 prog.20.1() [0x10163b28]
+08: #0 prog.20.1() [0x10163b28]
+07: #0 prog.20.1() [0x10163b28]
+19: #0 prog.20.1() [0x10163b28]
+01: #0 prog.20.1() [0x10163b28]
+17: #0 prog.20.1() [0x10163b28]
+16: #1 prog.20.1() [0x10163e38]
+16: #2 [0x100000050478]
+02: #1 prog.20.1() [0x10163e38]
+02: #2 [0x100000050478]
+04: #1 prog.20.1() [0x10163e38]
+04: #2 [0x100000050478]
+13: #1 prog.20.1() [0x10163e38]
+13: #2 [0x100000050478]
+12: #1 prog.20.1() [0x10163e38]
+12: #2 [0x100000050478]
+00: #1 prog.20.1() [0x10163e38]
+00: #2 [0x100000050478]
+12: #1 prog.20.1() [0x10163e38]
+12: #2 [0x100000050478]
+12: #1 prog.20.1() [0x10163e38]
+12: #2 [0x100000050478]
+18: #1 prog.20.1() [0x10163e38]
+18: #2 [0x100000050478]
+05: #1 prog.20.1() [0x10163e38]
+05: #2 [0x100000050478]
+17: #1 prog.20.1() [0x10163e38]
+17: #2 [0x100000050478]
+16: #1 prog.20.1() [0x10163e38]
+16: #2 [0x100000050478]
+03: #1 prog.20.1() [0x10163e38]
+03: #2 [0x100000050478]
+12: #1 prog.20.1() [0x10163e38]
+12: #2 [0x100000050478]
+19: #1 prog.20.1() [0x10163e38]
+19: #2 [0x100000050478]
+01: #1 prog.20.1() [0x10163e38]
+01: #2 [0x100000050478]
+18: #1 prog.20.1() [0x10163e38]
+18: #2 [0x100000050478]
+18: #1 prog.20.1() [0x10163e38]
+18: #2 [0x100000050478]
+07: #1 prog.20.1() [0x10163e38]
+07: #2 [0x100000050478]
+15: #1 prog.20.1() [0x10163e38]
+15: #2 [0x100000050478]
+00: #1 prog.20.1() [0x10163e38]
+00: #2 [0x100000050478]
+14: #1 prog.20.1() [0x10163e38]
+14: #2 [0x100000050478]
+05: #1 prog.20.1() [0x10163e38]
+05: #2 [0x100000050478]
+04: #1 prog.20.1() [0x10163e38]
+04: #2 [0x100000050478]
+17: #1 prog.20.1() [0x10163e38]
+17: #2 [0x100000050478]
+01: #1 prog.20.1() [0x10163e38]
+01: #2 [0x100000050478]
+07: #1 prog.20.1() [0x10163e38]
+07: #2 [0x100000050478]
+15: #1 prog.20.1() [0x10163e38]
+15: #2 [0x100000050478]
+03: #1 prog.20.1() [0x10163e38]
+03: #2 [0x100000050478]
+15: #1 prog.20.1() [0x10163e38]
+15: #2 [0x100000050478]
+16: #1 prog.20.1() [0x10163e38]
+16: #2 [0x100000050478]
+14: #1 prog.20.1() [0x10163e38]
+14: #2 [0x100000050478]
+18: #1 prog.20.1() [0x10163e38]
+18: #2 [0x100000050478]
+03: #1 prog.20.1() [0x10163e38]
+03: #2 [0x100000050478]
+00: #1 prog.20.1() [0x10163e38]
+00: #2 [0x100000050478]
+02: #1 prog.20.1() [0x10163e38]
+02: #2 [0x100000050478]
+01: #1 prog.20.1() [0x10163e38]
+01: #2 [0x100000050478]
+07: #1 prog.20.1() [0x10163e38]
+07: #2 [0x100000050478]
+14: #1 prog.20.1() [0x10163e38]
+14: #2 [0x100000050478]
+11: #1 prog.20.1() [0x10163e38]
+11: #2 [0x100000050478]
+15: #1 prog.20.1() [0x10163e38]
+15: #2 [0x100000050478]
+18: #1 prog.20.1() [0x10163e38]
+18: #2 [0x100000050478]
+05: #1 prog.20.1() [0x10163e38]
+05: #2 [0x100000050478]
+05: #1 prog.20.1() [0x10163e38]
+05: #2 [0x100000050478]
+06: #1 prog.20.1() [0x10163e38]
+06: #2 [0x100000050478]
+13: #1 prog.20.1() [0x10163e38]
+13: #2 [0x100000050478]
+09: #1 prog.20.1() [0x10163e38]
+09: #2 [0x100000050478]
+16: #1 prog.20.1() [0x10163e38]
+16: #2 [0x100000050478]
+10: #1 prog.20.1() [0x10163e38]
+10: #2 [0x100000050478]
+19: #1 prog.20.1() [0x10163e38]
+19: #2 [0x100000050478]
+16: #1 prog.20.1() [0x10163e38]
+16: #2 [0x100000050478]
+00: #1 prog.20.1() [0x10163e38]
+00: #2 [0x100000050478]
+03: #1 prog.20.1() [0x10163e38]
+03: #2 [0x100000050478]
+13: #1 prog.20.1() [0x10163e38]
+13: #2 [0x100000050478]
+11: #1 prog.20.1() [0x10163e38]
+11: #2 [0x100000050478]
+06: #1 prog.20.1() [0x10163e38]
+06: #2 [0x100000050478]
+02: #1 prog.20.1() [0x10163e38]
+02: #2 [0x100000050478]
+08: #1 prog.20.1() [0x10163e38]
+08: #2 [0x100000050478]
+11: #1 prog.20.1() [0x10163e38]
+11: #2 [0x100000050478]
+00: #1 prog.20.1() [0x10163e38]
+00: #2 [0x100000050478]
+12: #1 prog.20.1() [0x10163e38]
+12: #2 [0x100000050478]
+11: #1 prog.20.1() [0x10163e38]
+11: #2 [0x100000050478]
+04: #1 prog.20.1() [0x10163e38]
+04: #2 [0x100000050478]
+19: #1 prog.20.1() [0x10163e38]
+19: #2 [0x100000050478]
+04: #1 prog.20.1() [0x10163e38]
+04: #2 [0x100000050478]
+05: #1 prog.20.1() [0x10163e38]
+05: #2 [0x100000050478]
+15: #1 prog.20.1() [0x10163e38]
+15: #2 [0x100000050478]
+06: #1 prog.20.1() [0x10163e38]
+06: #2 [0x100000050478]
+02: #1 prog.20.1() [0x10163e38]
+02: #2 [0x100000050478]
+13: #1 prog.20.1() [0x10163e38]
+13: #2 [0x100000050478]
+14: #1 prog.20.1() [0x10163e38]
+14: #2 [0x100000050478]
+06: #1 prog.20.1() [0x10163e38]
+06: #2 [0x100000050478]
+08: #1 prog.20.1() [0x10163e38]
+08: #2 [0x100000050478]
+17: #1 prog.20.1() [0x10163e38]
+17: #2 [0x100000050478]
+17: #1 prog.20.1() [0x10163e38]
+17: #2 [0x100000050478]
+09: #1 prog.20.1() [0x10163e38]
+09: #2 [0x100000050478]
+19: #1 prog.20.1() [0x10163e38]
+19: #2 [0x100000050478]
+04: #1 prog.20.1() [0x10163e38]
+04: #2 [0x100000050478]
+03: #1 prog.20.1() [0x10163e38]
+03: #2 [0x100000050478]
+08: #1 prog.20.1() [0x10163e38]
+08: #2 [0x100000050478]
+13: #1 prog.20.1() [0x10163e38]
+13: #2 [0x100000050478]
+06: #1 prog.20.1() [0x10163e38]
+06: #2 [0x100000050478]
+17: #1 prog.20.1() [0x10163e38]
+17: #2 [0x100000050478]
+02: #1 prog.20.1() [0x10163e38]
+02: #2 [0x100000050478]
+11: #1 prog.20.1() [0x10163e38]
+11: #2 [0x100000050478]
+10: #1 prog.20.1() [0x10163e38]
+10: #2 [0x100000050478]
+09: #1 prog.20.1() [0x10163e38]
+09: #2 [0x100000050478]
+10: #1 prog.20.1() [0x10163e38]
+10: #2 [0x100000050478]
+09: #1 prog.20.1() [0x10163e38]
+09: #2 [0x100000050478]
+09: #1 prog.20.1() [0x10163e38]
+09: #2 [0x100000050478]
+01: #1 prog.20.1() [0x10163e38]
+01: #2 [0x100000050478]
+14: #1 prog.20.1() [0x10163e38]
+14: #2 [0x100000050478]
+19: #1 prog.20.1() [0x10163e38]
+19: #2 [0x100000050478]
+07: #1 prog.20.1() [0x10163e38]
+07: #2 [0x100000050478]
+08: #1 prog.20.1() [0x10163e38]
+08: #2 [0x100000050478]
+10: #1 prog.20.1() [0x10163e38]
+10: #2 [0x100000050478]
+08: #1 prog.20.1() [0x10163e38]
+08: #2 [0x100000050478]
+10: #1 prog.20.1() [0x10163e38]
+10: #2 [0x100000050478]
+07: #1 prog.20.1() [0x10163e38]
+07: #2 [0x100000050478]
+01: #1 prog.20.1() [0x10163e38]
+01: #2 [0x100000050478]
+16: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+02: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+12: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+13: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+04: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+12: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+03: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+18: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+18: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+19: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+01: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+18: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+00: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+00: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+12: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+17: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+16: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+05: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+15: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+05: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+05: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+12: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+14: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+01: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+16: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+17: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+07: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+00: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+07: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+02: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+11: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+18: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+01: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+00: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+03: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+07: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+11: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+15: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+00: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+15: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+05: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+14: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+03: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+14: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+16: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+03: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+15: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+06: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+18: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+19: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+12: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+19: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+04: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+06: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+10: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+11: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+02: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+13: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+16: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+05: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+09: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+15: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+13: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+09: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+19: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+04: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+08: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+08: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+04: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+11: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+07: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+13: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+17: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+06: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+06: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+01: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+11: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+14: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+06: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+02: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+03: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+04: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+09: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+08: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+13: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+08: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+17: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+17: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+10: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+14: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+19: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+07: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+10: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+09: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+02: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+09: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+01: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+10: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+10: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+08: #3 /opt/ibm/lib/libxlsmp.so.1(+0x94728) [0x100002c74728]
+16: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+02: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+13: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+05: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+18: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+18: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+12: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+04: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+12: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+01: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+18: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+12: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+03: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+12: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+19: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+00: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+00: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+05: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+16: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+00: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+05: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+14: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+00: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+17: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+01: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+15: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+12: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+07: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+00: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+07: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+17: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+15: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+03: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+14: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+13: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+03: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+11: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+15: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+16: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+05: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+02: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+11: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+01: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+03: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+16: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+05: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+18: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+14: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+06: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+07: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+10: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+09: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+18: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+11: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+02: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+19: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+19: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+19: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+13: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+16: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+11: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+15: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+15: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+06: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+04: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+04: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+13: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+17: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+07: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+06: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+04: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+17: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+09: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+14: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+06: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+11: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+02: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+03: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+17: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+06: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+10: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+09: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+08: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+08: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+08: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+13: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+01: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+19: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+04: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+08: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+09: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+14: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+10: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+07: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+10: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+02: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+09: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+01: #4 /lib64/libc.so.6(__libc_fork+0x270) [0x10000309b5b0]
+mpiexec: Forwarding signal 12 to job
+mpiexec: Forwarding signal 12 to job
+User defined signal 2
+02: *** RTS stack trace:
+02: *** RTS stack trace:
+02: *** RTS stack trace:
+02: *** RTS stack trace:
+02: *** RTS stack trace:
+02: *** RTS stack trace:
+14: *** RTS stack trace:
+14: *** RTS stack trace:
+14: *** RTS stack trace:
+14: *** RTS stack trace:
+14: *** RTS stack trace:
+14: *** RTS stack trace:
+07: *** RTS stack trace:
+07: *** RTS stack trace:
+07: *** RTS stack trace:
+07: *** RTS stack trace:
+07: *** RTS stack trace:
+07: *** RTS stack trace:
+09: *** RTS stack trace:
+09: *** RTS stack trace:
+09: *** RTS stack trace:
+09: *** RTS stack trace:
+09: *** RTS stack trace:
+09: *** RTS stack trace:
+12: *** RTS stack trace:
+12: *** RTS stack trace:
+12: *** RTS stack trace:
+12: *** RTS stack trace:
+12: *** RTS stack trace:
+12: *** RTS stack trace:
+17: *** RTS stack trace:
+17: *** RTS stack trace:
+17: *** RTS stack trace:
+17: *** RTS stack trace:
+17: *** RTS stack trace:
+17: *** RTS stack trace:
+04: *** RTS stack trace:
+04: *** RTS stack trace:
+04: *** RTS stack trace:
+04: *** RTS stack trace:
+04: *** RTS stack trace:
+04: *** RTS stack trace:
+16: *** RTS stack trace:
+16: *** RTS stack trace:
+16: *** RTS stack trace:
+16: *** RTS stack trace:
+16: *** RTS stack trace:
+16: *** RTS stack trace:
+19: *** RTS stack trace:
+19: *** RTS stack trace:
+19: *** RTS stack trace:
+19: *** RTS stack trace:
+19: *** RTS stack trace:
+19: *** RTS stack trace:
+08: *** RTS stack trace:
+08: *** RTS stack trace:
+08: *** RTS stack trace:
+08: *** RTS stack trace:
+08: *** RTS stack trace:
+08: *** RTS stack trace:
+18: *** RTS stack trace:
+18: *** RTS stack trace:
+18: *** RTS stack trace:
+18: *** RTS stack trace:
+18: *** RTS stack trace:
+18: *** RTS stack trace:
+00: *** RTS stack trace:
+00: *** RTS stack trace:
+00: *** RTS stack trace:
+00: *** RTS stack trace:
+00: *** RTS stack trace:
+00: *** RTS stack trace:
+15: *** RTS stack trace:
+15: *** RTS stack trace:
+15: *** RTS stack trace:
+15: *** RTS stack trace:
+15: *** RTS stack trace:
+15: *** RTS stack trace:
+06: *** RTS stack trace:
+06: *** RTS stack trace:
+06: *** RTS stack trace:
+06: *** RTS stack trace:
+06: *** RTS stack trace:
+06: *** RTS stack trace:
+13: *** RTS stack trace:
+13: *** RTS stack trace:
+13: *** RTS stack trace:
+13: *** RTS stack trace:
+13: *** RTS stack trace:
+13: *** RTS stack trace:
+03: *** RTS stack trace:
+03: *** RTS stack trace:
+03: *** RTS stack trace:
+03: *** RTS stack trace:
+03: *** RTS stack trace:
+03: *** RTS stack trace:
+05: *** RTS stack trace:
+05: *** RTS stack trace:
+05: *** RTS stack trace:
+05: *** RTS stack trace:
+05: *** RTS stack trace:
+05: *** RTS stack trace:
+01: *** RTS stack trace:
+01: *** RTS stack trace:
+01: *** RTS stack trace:
+01: *** RTS stack trace:
+01: *** RTS stack trace:
+01: *** RTS stack trace:
+11: *** RTS stack trace:
+11: *** RTS stack trace:
+11: *** RTS stack trace:
+11: *** RTS stack trace:
+11: *** RTS stack trace:
+11: *** RTS stack trace:
+10: *** RTS stack trace:
+10: *** RTS stack trace:
+10: *** RTS stack trace:
+10: *** RTS stack trace:
+10: *** RTS stack trace:
+10: *** RTS stack trace:
+16: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+18: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+15: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+10: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+14: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+12: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+19: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+05: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+02: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+07: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+09: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+01: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+04: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+08: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+00: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+06: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+13: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+03: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+17: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+11: #0 prog.20.1() [0x10163b28] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:251
+16: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+16: #2 [0x100000050478]
+01: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+01: #2 [0x100000050478]
+06: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+06: #2 [0x100000050478]
+13: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+13: #2 [0x100000050478]
+01: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+13: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+16: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+06: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+05: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+05: #2 [0x100000050478]
+03: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+03: #2 [0x100000050478]
+04: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+04: #2 [0x100000050478]
+00: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+00: #2 [0x100000050478]
+19: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+19: #2 [0x100000050478]
+10: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+10: #2 [0x100000050478]
+10: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+02: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+02: #2 [0x100000050478]
+07: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+07: #2 [0x100000050478]
+09: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+09: #2 [0x100000050478]
+14: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+14: #2 [0x100000050478]
+14: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+15: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+15: #2 [0x100000050478]
+12: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+12: #2 [0x100000050478]
+12: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+11: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+11: #2 [0x100000050478]
+08: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+08: #2 [0x100000050478]
+17: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+17: #2 [0x100000050478]
+18: #1 prog.20.1() [0x10163e38] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:353
+18: #2 [0x100000050478]
+05: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+00: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+19: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+02: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+07: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+09: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+18: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+15: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+03: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+11: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+08: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+17: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+04: #3 /lib64/libpthread.so.0(pthread_cond_wait+0x9c) [0x100002f8e61c] at ??:0
+16: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+13: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+06: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+01: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+12: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+14: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+10: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+17: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+05: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+19: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+07: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+18: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+15: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+00: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+11: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+02: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+09: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+03: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+08: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+04: #4 prog.20.1() [0x10123f98] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_async.h:169
+01: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+13: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+16: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+06: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+12: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+14: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+17: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+15: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+05: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+19: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+07: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+18: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+10: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+08: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+11: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+02: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+04: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+09: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+03: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+00: #5 prog.20.1() [0x101713a0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_stdio.cpp:1381
+16: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+13: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+06: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+01: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+12: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+05: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+10: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+14: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+17: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+15: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+19: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+07: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+18: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+08: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+11: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+02: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+04: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+03: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+09: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+00: #6 prog.20.1() [0x1016abb0] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh_rts.cpp:1138
+12: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+16: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+06: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+13: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+01: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+17: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+18: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+10: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+14: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+13: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+01: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+00: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+08: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+06: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+15: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+19: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+11: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+02: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+04: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+03: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+07: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+09: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+05: #7 prog.20.1() [0x100fd494] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:402
+16: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+12: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+13: #9 prog.20.1() [0x1000bacc] at ??:?
+01: #9 prog.20.1() [0x1000bacc] at ??:?
+10: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+14: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+12: #9 prog.20.1() [0x1000bacc] at ??:?
+16: #9 prog.20.1() [0x1000bacc] at ??:?
+06: #9 prog.20.1() [0x1000bacc] at ??:?
+15: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+02: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+18: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+05: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+17: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+00: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+08: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+19: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+11: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+04: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+03: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+07: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+09: #8 prog.20.1() [0x100ff24c] at /polusfs/home/kolganov.a/DVM/dvm_r8114/dvm_sys/rts/dvmh/dvmh2.cpp:414
+01: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+12: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+13: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+06: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+16: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+13: #11 /lib64/libc.so.6(__libc_start_main+0xc4) [0x100002fe4b74] at ??:0
+13: USRFILE=prog.c;  USRLINE=114;
+13: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+01: #11 /lib64/libc.so.6(__libc_start_main+0xc4) [0x100002fe4b74] at ??:0
+01: USRFILE=prog.c;  USRLINE=114;
+01: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+01: *** RTS stack trace:
+06: #11 /lib64/libc.so.6(__libc_start_main+0xc4) [0x100002fe4b74] at ??:0
+06: USRFILE=prog.c;  USRLINE=114;
+06: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+16: #11 /lib64/libc.so.6(__libc_start_main+0xc4) [0x100002fe4b74] at ??:0
+16: USRFILE=prog.c;  USRLINE=114;
+16: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+16: *** RTS stack trace:
+12: #11 /lib64/libc.so.6(__libc_start_main+0xc4) [0x100002fe4b74] at ??:0
+12: USRFILE=prog.c;  USRLINE=114;
+12: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+02: #9 prog.20.1() [0x1000bacc] at ??:?
+02: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+02: #11 /lib64/libc.so.6(__libc_start_main+0xc4) [0x100002fe4b74] at ??:0
+02: USRFILE=prog.c;  USRLINE=114;
+02: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+02: *** RTS stack trace:
+02: *** RTS stack trace:
+02: *** RTS stack trace:
+02: *** RTS stack trace:
+02: *** RTS stack trace:
+18: #9 prog.20.1() [0x1000bacc] at ??:?
+18: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+18: *** RTS stack trace:
+18: *** RTS stack trace:
+18: *** RTS stack trace:
+18: *** RTS stack trace:
+18: *** RTS stack trace:
+09: #9 prog.20.1() [0x1000bacc] at ??:?
+09: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+09: *** RTS stack trace:
+09: *** RTS stack trace:
+09: *** RTS stack trace:
+09: *** RTS stack trace:
+09: *** RTS stack trace:
+10: #9 prog.20.1() [0x1000bacc] at ??:?
+10: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+10: *** RTS stack trace:
+10: *** RTS stack trace:
+10: *** RTS stack trace:
+10: *** RTS stack trace:
+10: *** RTS stack trace:
+14: #9 prog.20.1() [0x1000bacc] at ??:?
+14: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+14: #11 /lib64/libc.so.6(__libc_start_main+0xc4) [0x100002fe4b74] at ??:0
+14: USRFILE=prog.c;  USRLINE=114;
+14: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+14: *** RTS stack trace:
+05: #9 prog.20.1() [0x1000bacc] at ??:?
+05: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+05: *** RTS stack trace:
+05: *** RTS stack trace:
+05: *** RTS stack trace:
+05: *** RTS stack trace:
+17: #9 prog.20.1() [0x1000bacc] at ??:?
+17: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+17: *** RTS stack trace:
+17: *** RTS stack trace:
+17: *** RTS stack trace:
+17: *** RTS stack trace:
+17: *** RTS stack trace:
+00: #9 prog.20.1() [0x1000bacc] at ??:?
+00: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+00: *** RTS stack trace:
+00: *** RTS stack trace:
+00: *** RTS stack trace:
+08: #9 prog.20.1() [0x1000bacc] at ??:?
+08: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+08: *** RTS stack trace:
+08: *** RTS stack trace:
+08: *** RTS stack trace:
+08: *** RTS stack trace:
+08: *** RTS stack trace:
+19: #9 prog.20.1() [0x1000bacc] at ??:?
+19: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+19: *** RTS stack trace:
+19: *** RTS stack trace:
+19: *** RTS stack trace:
+19: *** RTS stack trace:
+19: *** RTS stack trace:
+15: #9 prog.20.1() [0x1000bacc] at ??:?
+15: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+15: *** RTS stack trace:
+15: *** RTS stack trace:
+15: *** RTS stack trace:
+15: *** RTS stack trace:
+15: *** RTS stack trace:
+11: #9 prog.20.1() [0x1000bacc] at ??:?
+11: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+11: *** RTS stack trace:
+11: *** RTS stack trace:
+11: *** RTS stack trace:
+11: *** RTS stack trace:
+11: *** RTS stack trace:
+04: #9 prog.20.1() [0x1000bacc] at ??:?
+04: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+04: *** RTS stack trace:
+04: *** RTS stack trace:
+04: *** RTS stack trace:
+04: *** RTS stack trace:
+03: #9 prog.20.1() [0x1000bacc] at ??:?
+03: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+03: #11 /lib64/libc.so.6(__libc_start_main+0xc4) [0x100002fe4b74] at ??:0
+03: USRFILE=prog.c;  USRLINE=114;
+03: SYSFILE=dvmh_rts.cpp;  SYSLINE=337;
+03: *** RTS stack trace:
+07: #9 prog.20.1() [0x1000bacc] at ??:?
+07: #10 /lib64/libc.so.6(+0x24980) [0x100002fe4980] at ??:0
+07: *** RTS stack trace:
+07: *** RTS stack trace:
+07: *** RTS stack trace:
+07: *** RTS stack trace:
+07: *** RTS stack trace:
+13: #0 prog.20.1() [0x10163b28]
+01: #0 prog.20.1() [0x10163b28]
+12: #0 prog.20.1() [0x10163b28]
+12: #0 prog.20.1() [0x10163b28]
+06: #0 prog.20.1() [0x10163b28]
+06: #0 prog.20.1() [0x10163b28]
+16: #0 prog.20.1() [0x10163b28]
+06: #0 prog.20.1() [0x10163b28]
+13: #0 prog.20.1() [0x10163b28]
+16: #0 prog.20.1() [0x10163b28]
+12: #0 prog.20.1() [0x10163b28]
+06: #0 prog.20.1() [0x10163b28]
+01: #0 prog.20.1() [0x10163b28]
+13: #0 prog.20.1() [0x10163b28]
+12: #0 prog.20.1() [0x10163b28]
+06: #0 prog.20.1() [0x10163b28]
+01: #0 prog.20.1() [0x10163b28]
+12: #0 prog.20.1() [0x10163b28]
+01: #0 prog.20.1() [0x10163b28]
+16: #0 prog.20.1() [0x10163b28]
+13: #0 prog.20.1() [0x10163b28]
+16: #0 prog.20.1() [0x10163b28]
+16: #0 prog.20.1() [0x10163b28]
+01: #0 prog.20.1() [0x10163b28]
+13: #0 prog.20.1() [0x10163b28]
+01: #1 prog.20.1() [0x10163e38]
+01: #2 [0x100000050478]
+06: #1 prog.20.1() [0x10163e38]
+06: #2 [0x100000050478]
+13: #1 prog.20.1() [0x10163e38]
+13: #2 [0x100000050478]
+06: #1 prog.20.1() [0x10163e38]
+06: #2 [0x100000050478]
+16: #1 prog.20.1() [0x10163e38]
+16: #2 [0x100000050478]
+13: #1 prog.20.1() [0x10163e38]
+13: #2 [0x100000050478]
+12: #1 prog.20.1() [0x10163e38]
+12: #2 [0x100000050478]
+12: #1 prog.20.1() [0x10163e38]
+12: #2 [0x100000050478]
+13: #1 prog.20.1() [0x10163e38]
+13: #2 [0x100000050478]
+12: #1 prog.20.1() [0x10163e38]
+12: #2 [0x100000050478]
+12: #1 prog.20.1() [0x10163e38]
+12: #2 [0x100000050478]
+12: #1 prog.20.1() [0x10163e38]
+12: #2 [0x100000050478]
+16: #1 prog.20.1() [0x10163e38]
+16: #2 [0x100000050478]
+16: #1 prog.20.1() [0x10163e38]
+16: #2 [0x100000050478]
+16: #1 prog.20.1() [0x10163e38]
+16: #2 [0x100000050478]
+06: #1 prog.20.1() [0x10163e38]
+06: #2 [0x100000050478]
+06: #1 prog.20.1() [0x10163e38]
+06: #2 [0x100000050478]
+06: #1 prog.20.1() [0x10163e38]
+06: #2 [0x100000050478]
+01: #1 prog.20.1() [0x10163e38]
+01: #2 [0x100000050478]
+01: #1 prog.20.1() [0x10163e38]
+01: #2 [0x100000050478]
+01: #1 prog.20.1() [0x10163e38]
+01: #2 [0x100000050478]
+13: #1 prog.20.1() [0x10163e38]
+13: #2 [0x100000050478]
+16: #1 prog.20.1() [0x10163e38]
+16: #2 [0x100000050478]
+01: #1 prog.20.1() [0x10163e38]
+01: #2 [0x100000050478]
+13: #1 prog.20.1() [0x10163e38]
+13: #2 [0x100000050478]

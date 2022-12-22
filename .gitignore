@@ -2,5 +2,5 @@
 imperative
 *.par
 ./gpu*
-MPI*
+./MPI*
 core*
