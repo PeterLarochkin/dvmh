@@ -375,6 +375,7 @@ int main() {
             printf("n:%d, diff:%.10f\n", count, sqrt(squared_difference));
         }
         count++;
+        return 0;
     }
     
     end = dvmh_wtime();
