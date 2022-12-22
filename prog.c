@@ -172,8 +172,6 @@ int main() {
             }
         }
 
-        // applyA(omega, A_omega, M, N, h1, h2, A1, B1);
-        //with padding, inside "picture"
         #pragma dvm region
         {
             #pragma dvm parallel([i][j] on A_omega[i][j]) shadow_renew(omega) 
@@ -240,7 +238,7 @@ int main() {
         }
 
 
-        // minus(A_omega, B, r, M, N);
+        
         #pragma dvm region
         {
             #pragma dvm parallel([i][j] on r[i][j])
@@ -254,15 +252,15 @@ int main() {
 
 
 
-        // applyA(r, A_r, M, N, h1, h2, A1, B1);
+
         #pragma dvm region
         {
 
-            //with padding, inside "picture"
+            
             #pragma dvm parallel([i][j] on A_r[i][j]) shadow_renew(r) 
             for (i = 1; i < M; ++i) {
                 for (j = 1; j < N; ++j) {
-                    // here is (7) equation works
+                    
                     A_r[i][j] = r[i][j] * (2/(h1*h1) + 2/(h2*h2) + q(A1+ i*h1, B1+ j*h2)) + 
                                         r[i-1][j] * (-1/(h1*h1)) +
                                         r[i+1][j] * (-1/(h1*h1)) +
@@ -321,7 +319,8 @@ int main() {
                 }
             }
         }
-        // tau = scalarProduct(A_r, r, M, N, h1, h2) / scalarProduct(A_r, A_r, M, N, h1, h2);
+
+
         sum_ = 0.0;
         #pragma dvm actual(sum_)
         #pragma dvm region
@@ -347,9 +346,6 @@ int main() {
         }
         tau = tau / sum_;
 
-
-        // multiplyByNum(r, tau, tau_r, M, N);
-        // minus(omega, tau_r, omega_next, M, N);
         #pragma dvm region
         {
             #pragma dvm parallel([i][j] on omega_next[i][j])
@@ -360,7 +356,6 @@ int main() {
             }
         }
 
-        // squared_difference = scalarProduct(tau_r, tau_r, M, N, h1, h2);
         sum_ = 0.0;
         #pragma dvm actual(sum_)
         #pragma dvm region
