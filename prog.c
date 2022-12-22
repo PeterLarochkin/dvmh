@@ -111,7 +111,9 @@ double ro(int index, int M_or_N) {
 // }
 
 
-int main(/*int argc, char** argv*/) {
+
+
+int main() {
 
 
     double sum_ = 0.0;
@@ -181,7 +183,7 @@ int main(/*int argc, char** argv*/) {
     }
 
     int count = 0;
-    while (squared_difference >= sq_eps && count < 120000)
+    while (squared_difference >= sq_eps && count < 1500)
     {
         #pragma dvm region
         {
@@ -396,7 +398,7 @@ int main(/*int argc, char** argv*/) {
 
         double squared_difference = sum_;
     
-        if (count % 500 == 0)
+        if (count % 100 == 0)
             printf("n:%d, diff:%.10f\n", count, sqrt(squared_difference));
         count++;
     }
