@@ -692,7 +692,7 @@ void solving (double h1, double h2, double epsilon, double A1, double A2, double
     double *recv_right_column = (double*) malloc(n * sizeof(double));
     
     int count = 0;
-    while (difference_global >= epsilon && count < 1500)
+    while (difference_global >= epsilon)
     {
         
         for (size_t i = 1; i <= m; ++i) {
