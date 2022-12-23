@@ -1,6 +1,6 @@
 #BSUB -n 40 -q normal
 #BSUB -W 00:15
-#BSUB -o "po20_16000x16000.out"
-#BSUB -e "po20_16000x16000.err"
+#BSUB -o "po40_16000x16000.out"
+#BSUB -e "po40_16000x16000.err"
 #BSUB -R "affinity[core(1)]"
 OMP_NUM_THREADS=4 mpiexec ./parallelO.o
