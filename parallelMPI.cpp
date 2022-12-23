@@ -739,7 +739,7 @@ void solving (double h1, double h2, double epsilon, double A1, double A2, double
     // return;
     if (info->rank == 0) {
         printf("size ,  M , N   , time        , diff_u_w\n");
-        printf("%d, %d, %d, %.5f, %.10f\n", size, M, N, global_time_diff, norm);
+        printf("%d, %d, %d, %.5f, %.10f, %.7f\n", size, M, N, global_time_diff, norm, epsilon);
     }
     
 }
