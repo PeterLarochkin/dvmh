@@ -1,0 +1,99 @@
+Sender: LSF System <lsfadmin@polus-c4-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1021527: <#BSUB -x;#BSUB -n 40 -q normal;#BSUB -W 00:30;#BSUB -o "p40_16kx16k.out";#BSUB -e "p40_16kx16k.err";mpiexec ./parallel.o> in cluster <MSUCluster> Done
+
+Job <#BSUB -x;#BSUB -n 40 -q normal;#BSUB -W 00:30;#BSUB -o "p40_16kx16k.out";#BSUB -e "p40_16kx16k.err";mpiexec ./parallel.o> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel22-618-1-04> in cluster <MSUCluster> at Fri Dec 23 15:53:02 2022
+Job was executed on host(s) <20*polus-c4-ib.bmc.hpc.cs.msu.ru>, in queue <normal>, as user <edu-cmc-skmodel22-618-1-04> in cluster <MSUCluster> at Fri Dec 23 15:53:03 2022
+                            <20*polus-c3-ib.bmc.hpc.cs.msu.ru>
+</home_edu/edu-cmc-skmodel22-618-1/edu-cmc-skmodel22-618-1-04> was used as the home directory.
+</home_edu/edu-cmc-skmodel22-618-1/edu-cmc-skmodel22-618-1-04/homework3/dvmh> was used as the working directory.
+Started at Fri Dec 23 15:53:03 2022
+Terminated at Fri Dec 23 15:53:15 2022
+Results reported at Fri Dec 23 15:53:15 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -x
+#BSUB -n 40 -q normal
+#BSUB -W 00:30
+#BSUB -o "p40_16kx16k.out"
+#BSUB -e "p40_16kx16k.err"
+mpiexec ./parallel.o
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   396.00 sec.
+    Max Memory :                                 10115 MB
+    Average Memory :                             7586.50 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   8 MB
+    Max Processes :                              24
+    Max Threads :                                69
+    Run time :                                   15 sec.
+    Turnaround time :                            13 sec.
+
+The output (if any) follows:
+
+n: 0, rank: 0, norm: 0.0000054574, eps:0.00000001
+n: 1, rank: 0, norm: 0.0000040999, eps:0.00000001
+n: 2, rank: 0, norm: 0.0000032028, eps:0.00000001
+n: 3, rank: 0, norm: 0.0000032516, eps:0.00000001
+n: 4, rank: 0, norm: 0.0000027518, eps:0.00000001
+n: 5, rank: 0, norm: 0.0000029061, eps:0.00000001
+n: 6, rank: 0, norm: 0.0000025081, eps:0.00000001
+n: 7, rank: 0, norm: 0.0000026918, eps:0.00000001
+n: 8, rank: 0, norm: 0.0000023450, eps:0.00000001
+n: 9, rank: 0, norm: 0.0000025392, eps:0.00000001
+n: 10, rank: 0, norm: 0.0000022244, eps:0.00000001
+n: 11, rank: 0, norm: 0.0000024221, eps:0.00000001
+n: 12, rank: 0, norm: 0.0000021292, eps:0.00000001
+n: 13, rank: 0, norm: 0.0000023252, eps:0.00000001
+n: 14, rank: 0, norm: 0.0000020419, eps:0.00000001
+n: 15, rank: 0, norm: 0.0000021941, eps:0.00000001
+n: 16, rank: 0, norm: 0.0000018175, eps:0.00000001
+n: 17, rank: 0, norm: 0.0000016420, eps:0.00000001
+n: 18, rank: 0, norm: 0.0000012943, eps:0.00000001
+n: 19, rank: 0, norm: 0.0000013891, eps:0.00000001
+n: 20, rank: 0, norm: 0.0000012482, eps:0.00000001
+n: 21, rank: 0, norm: 0.0000013616, eps:0.00000001
+n: 22, rank: 0, norm: 0.0000012264, eps:0.00000001
+n: 23, rank: 0, norm: 0.0000013387, eps:0.00000001
+n: 24, rank: 0, norm: 0.0000012067, eps:0.00000001
+n: 25, rank: 0, norm: 0.0000013179, eps:0.00000001
+n: 26, rank: 0, norm: 0.0000011886, eps:0.00000001
+n: 27, rank: 0, norm: 0.0000012988, eps:0.00000001
+n: 28, rank: 0, norm: 0.0000011719, eps:0.00000001
+n: 29, rank: 0, norm: 0.0000012810, eps:0.00000001
+n: 30, rank: 0, norm: 0.0000011564, eps:0.00000001
+n: 31, rank: 0, norm: 0.0000012646, eps:0.00000001
+n: 32, rank: 0, norm: 0.0000011420, eps:0.00000001
+n: 33, rank: 0, norm: 0.0000012492, eps:0.00000001
+n: 34, rank: 0, norm: 0.0000011284, eps:0.00000001
+n: 35, rank: 0, norm: 0.0000012347, eps:0.00000001
+n: 36, rank: 0, norm: 0.0000011157, eps:0.00000001
+n: 37, rank: 0, norm: 0.0000012211, eps:0.00000001
+n: 38, rank: 0, norm: 0.0000011038, eps:0.00000001
+n: 39, rank: 0, norm: 0.0000012083, eps:0.00000001
+n: 40, rank: 0, norm: 0.0000010924, eps:0.00000001
+n: 41, rank: 0, norm: 0.0000011962, eps:0.00000001
+n: 42, rank: 0, norm: 0.0000010817, eps:0.00000001
+n: 43, rank: 0, norm: 0.0000011847, eps:0.00000001
+n: 44, rank: 0, norm: 0.0000010715, eps:0.00000001
+n: 45, rank: 0, norm: 0.0000011737, eps:0.00000001
+n: 46, rank: 0, norm: 0.0000010618, eps:0.00000001
+n: 47, rank: 0, norm: 0.0000011633, eps:0.00000001
+n: 48, rank: 0, norm: 0.0000010525, eps:0.00000001
+n: 49, rank: 0, norm: 0.0000011533, eps:0.00000001
+size ,  M , N   , time    , diff_u_w,  eps
+40, 16000, 16000, 9.60058, 1.9981909140, 0.00000001
+
+
+PS:
+
+Read file <p40_16kx16k.err> for stderr output of this job.

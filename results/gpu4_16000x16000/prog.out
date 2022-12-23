@@ -1,0 +1,117 @@
+Sender: LSF System <lsfadmin@polus-c3-ib.bmc.hpc.cs.msu.ru>
+Subject: Job 1021531: <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel22-618-1-04 #;#BSUB -x;#BSUB -n 2;#BSUB -R span[ptile=2];#BSUB -W 00:15;#BSUB -gpu "num=2:mode=shared:mps=yes";#BSUB -o prog.2.1.%J.out;#BSUB -e prog.2.1.%J.err; mpiexec prog.2.1> in cluster <MSUCluster> Done
+
+Job <# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel22-618-1-04 #;#BSUB -x;#BSUB -n 2;#BSUB -R span[ptile=2];#BSUB -W 00:15;#BSUB -gpu "num=2:mode=shared:mps=yes";#BSUB -o prog.2.1.%J.out;#BSUB -e prog.2.1.%J.err; mpiexec prog.2.1> was submitted from host <polus-ib.bmc.hpc.cs.msu.ru> by user <edu-cmc-skmodel22-618-1-04> in cluster <MSUCluster> at Fri Dec 23 15:59:42 2022
+Job was executed on host(s) <2*polus-c3-ib.bmc.hpc.cs.msu.ru>, in queue <short>, as user <edu-cmc-skmodel22-618-1-04> in cluster <MSUCluster> at Fri Dec 23 15:59:43 2022
+</home_edu/edu-cmc-skmodel22-618-1/edu-cmc-skmodel22-618-1-04> was used as the home directory.
+</home_edu/edu-cmc-skmodel22-618-1/edu-cmc-skmodel22-618-1-04/homework3/dvmh> was used as the working directory.
+Started at Fri Dec 23 15:59:43 2022
+Terminated at Fri Dec 23 16:01:44 2022
+Results reported at Fri Dec 23 16:01:44 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+# this file was automaticly created by mpisubmit.pl script for edu-cmc-skmodel22-618-1-04 #
+#BSUB -x
+#BSUB -n 2
+#BSUB -R span[ptile=2]
+#BSUB -W 00:15
+#BSUB -gpu "num=2:mode=shared:mps=yes"
+#BSUB -o prog.2.1.%J.out
+#BSUB -e prog.2.1.%J.err
+ mpiexec prog.2.1
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   34.00 sec.
+    Max Memory :                                 12224 MB
+    Average Memory :                             2357.11 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              26
+    Max Threads :                                59
+    Run time :                                   123 sec.
+    Turnaround time :                            122 sec.
+
+The output (if any) follows:
+
+--------------------------------------------------------------------------
+A process has executed an operation involving a call to the
+"fork()" system call to create a child process.  Open MPI is currently
+operating in a condition that could result in memory corruption or
+other system errors; your job may hang, crash, or produce silent
+data corruption.  The use of fork() (or system() or other calls that
+create child processes) is strongly discouraged.
+
+The process that invoked fork was:
+
+  Local host:          [[53007,1],0] (PID 127120)
+
+If you are *absolutely sure* that your application will successfully
+and correctly survive a call to fork(), you may disable this warning
+by setting the mpi_warn_on_fork MCA parameter to 0.
+--------------------------------------------------------------------------
+n:0, diff:0.0000054574
+n:1, diff:0.0000040999
+n:2, diff:0.0000032028
+n:3, diff:0.0000032516
+n:4, diff:0.0000027518
+n:5, diff:0.0000029061
+n:6, diff:0.0000025081
+n:7, diff:0.0000026918
+n:8, diff:0.0000023450
+n:9, diff:0.0000025392
+n:10, diff:0.0000022244
+n:11, diff:0.0000024221
+n:12, diff:0.0000021292
+n:13, diff:0.0000023252
+n:14, diff:0.0000020419
+n:15, diff:0.0000021941
+n:16, diff:0.0000018175
+n:17, diff:0.0000016420
+n:18, diff:0.0000012943
+n:19, diff:0.0000013891
+n:20, diff:0.0000012482
+n:21, diff:0.0000013616
+n:22, diff:0.0000012264
+n:23, diff:0.0000013387
+n:24, diff:0.0000012067
+n:25, diff:0.0000013179
+n:26, diff:0.0000011886
+n:27, diff:0.0000012988
+n:28, diff:0.0000011719
+n:29, diff:0.0000012810
+n:30, diff:0.0000011564
+n:31, diff:0.0000012646
+n:32, diff:0.0000011420
+n:33, diff:0.0000012492
+n:34, diff:0.0000011284
+n:35, diff:0.0000012347
+n:36, diff:0.0000011157
+n:37, diff:0.0000012211
+n:38, diff:0.0000011038
+n:39, diff:0.0000012083
+n:40, diff:0.0000010924
+n:41, diff:0.0000011962
+n:42, diff:0.0000010817
+n:43, diff:0.0000011847
+n:44, diff:0.0000010715
+n:45, diff:0.0000011737
+n:46, diff:0.0000010618
+n:47, diff:0.0000011633
+n:48, diff:0.0000010525
+n:49, diff:0.0000011533
+time:2.9397074599, max_diff:1.9981909140
+ 
+
+
+PS:
+
+Read file <prog.2.1.1021531.err> for stderr output of this job.

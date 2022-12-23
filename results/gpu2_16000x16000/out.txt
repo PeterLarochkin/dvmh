@@ -4,54 +4,54 @@ Analyzer is executing on DVM-system version 5.0, platform POLUS
 -------------------------------------------------------------------------
 INTERVAL ( NLINE=27 SOURCE=prog.c ) LEVEL=0  EXE_COUNT=1
 --- The main characteristics --- 
-Parallelization efficiency      0.9997 
-Execution time                 69.2549 
+Parallelization efficiency      0.9998 
+Execution time                  3.4166 
 Processors                           1
 Threads amount                       1
-Total time                     69.2549
-Productive time                69.2357 ( CPU= 68.9892 Sys= 0.2465 I/O= 0.0000 )
-Lost  time                      0.0192 
-   Communication                0.0192 ( Real_sync= 0.0000 Starts= 0.0000 )
-Overlap                         0.0023
-Productive time GPU           127.6267
-Lost time GPU                  17.8588
+Total time                      3.4166
+Productive time                 3.4159 ( CPU= 3.3819 Sys= 0.0339 I/O= 0.0000 )
+Lost  time                      0.0007 
+   Communication                0.0007 ( Real_sync= 0.0000 Starts= 0.0000 )
+Overlap                         0.0001
+Productive time GPU             5.0318
+Lost time GPU                   0.7275
                   Nop   Communic    Overlap 
-Reduction        4501     0.0192     0.0006 
-Shadow          15000     0.0000     0.0017 
+Reduction         151     0.0007     0.0000 
+Shadow            500     0.0000     0.0001 
 --- The comparative characteristics --- 
                               Tmin N proc      Tmax N proc      Tmid
-Lost time                   0.0192     1     0.0192     1     0.0192 
-Communication               0.0192     1     0.0192     1     0.0192 
-Overlap                     0.0023     1     0.0023     1     0.0023 
-Execution time             69.2549     1    69.2549     1    69.2549 
-User CPU time              68.9892     1    68.9892     1    68.9892 
-Sys. CPU time               0.2465     1     0.2465     1     0.2465 
-Productive time GPU       127.6267     1   127.6267     1   127.6267 
-Lost time GPU              17.8588     1    17.8588     1    17.8588 
+Lost time                   0.0007     1     0.0007     1     0.0007 
+Communication               0.0007     1     0.0007     1     0.0007 
+Overlap                     0.0001     1     0.0001     1     0.0001 
+Execution time              3.4166     1     3.4166     1     3.4166 
+User CPU time               3.3819     1     3.3819     1     3.3819 
+Sys. CPU time               0.0339     1     0.0339     1     0.0339 
+Productive time GPU         5.0318     1     5.0318     1     5.0318 
+Lost time GPU               0.7275     1     0.7275     1     0.7275 
 Processors                       1     1          1     1          1 
                       Communic          Overlap  
-Reduction       Tmin    0.0192     1     0.0006     1 
-Reduction       Tmax    0.0192     1     0.0006     1 
-Reduction       Tmid    0.0192           0.0006       
-Shadow          Tmin    0.0000     1     0.0017     1 
-Shadow          Tmax    0.0000     1     0.0017     1 
-Shadow          Tmid    0.0000           0.0017       
+Reduction       Tmin    0.0007     1     0.0000     1 
+Reduction       Tmax    0.0007     1     0.0000     1 
+Reduction       Tmid    0.0007           0.0000       
+Shadow          Tmin    0.0000     1     0.0001     1 
+Shadow          Tmax    0.0000     1     0.0001     1 
+Shadow          Tmid    0.0000           0.0001       
 --- The execution characteristics --- 
                                 1 
-Lost time                  0.0192 
-Communication              0.0192 
-Overlap                    0.0023 
-Execution time            69.2549 
-User CPU time             68.9892 
-Sys. CPU time              0.2465 
-Productive time GPU      127.6267 
-Lost time GPU             17.8588 
+Lost time                  0.0007 
+Communication              0.0007 
+Overlap                    0.0001 
+Execution time             3.4166 
+User CPU time              3.3819 
+Sys. CPU time              0.0339 
+Productive time GPU        5.0318 
+Lost time GPU              0.7275 
 Processors                      1 
            Communication          
-Reduction                  0.0192 
+Reduction                  0.0007 
            Overlap                
-Reduction                  0.0006 
-Shadow                     0.0017 
+Reduction                  0.0000 
+Shadow                     0.0001 
 
 
 --- The GPU characteristics --- 
@@ -64,31 +64,31 @@ Shadow                     0.0017
    ├───────────────────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────┐
    │                                          #           Min           Max           Sum       Average    Productive          Lost │
    ├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-   │ [Shadow] Copy GPU to GPU              6000      125.008K      125.008K      732.468M      125.008K             -       0.2022s │
-   │ [Region IN] Copy CPU to GPU           3006            8B      976.746M        5.723G        1.950M       0.4452s             - │
-   │ Loop execution                       21006        0.0000        0.0100       63.1283        0.0030      63.1283s             - │
-   │ Reduction                             4501        0.0018        0.0020        7.9511        0.0018             -       7.9511s │
-   │ Page lock host memory                 6006        0.0001        0.0112        0.7694        0.0001             -       0.7694s │
+   │ [Shadow] Copy GPU to GPU               200      125.008K      125.008K       24.416M      125.008K             -       0.0065s │
+   │ [Region IN] Copy CPU to GPU            106            8B      976.746M        5.723G       55.287M       0.3565s             - │
+   │ Loop execution                         706        0.0000        0.0101        2.1164        0.0030       2.1164s             - │
+   │ Reduction                              151        0.0018        0.0022        0.2669        0.0018             -       0.2669s │
+   │ Page lock host memory                  206        0.0001        0.0112        0.0900        0.0004             -       0.0900s │
    ├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-   │ Productive time:    63.5735s                                                                                                   │
-   │ Lost time      :     8.9227s                                                                                                   │
+   │ Productive time:     2.4729s                                                                                                   │
+   │ Lost time      :     0.3635s                                                                                                   │
    └───┬────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
    ┌───┴───────────────────────────┐
    │ GPU #2 (Tesla P100-SXM2-16GB) │
    ├───────────────────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────┐
    │                                          #           Min           Max           Sum       Average    Productive          Lost │
    ├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-   │ [Shadow] Copy GPU to GPU              6000      125.008K      125.008K      732.468M      125.008K             -       0.2022s │
-   │ [Region IN] Copy CPU to GPU           3006            8B      976.868M        5.724G        1.950M       0.5315s             - │
-   │ Loop execution                       21006        0.0000        0.0100       63.5217        0.0030      63.5217s             - │
-   │ Reduction                             4501        0.0018        0.0021        7.9644        0.0018             -       7.9644s │
-   │ Page lock host memory                 6006        0.0001        0.0112        0.7694        0.0001             -       0.7694s │
+   │ [Shadow] Copy GPU to GPU               200      125.008K      125.008K       24.416M      125.008K             -       0.0065s │
+   │ [Region IN] Copy CPU to GPU            106            8B      976.868M        5.724G       55.294M       0.4283s             - │
+   │ Loop execution                         706        0.0000        0.0101        2.1306        0.0030       2.1306s             - │
+   │ Reduction                              151        0.0018        0.0022        0.2675        0.0018             -       0.2675s │
+   │ Page lock host memory                  206        0.0001        0.0112        0.0900        0.0004             -       0.0900s │
    ├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-   │ Productive time:    64.0532s                                                                                                   │
-   │ Lost time      :     8.9361s                                                                                                   │
+   │ Productive time:     2.5589s                                                                                                   │
+   │ Lost time      :     0.3641s                                                                                                   │
    └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 
 -------------------------------------------------------------------------
 Name (number) and performance time of processors
-polus-c4-ib.bmc.hpc.cs.msu.ru(1) 0.382787
-min - polus-c4-ib.bmc.hpc.cs.msu.ru(1) 0.382787; max - polus-c4-ib.bmc.hpc.cs.msu.ru(1) 0.382787; mid - 0.382787
+polus-c4-ib.bmc.hpc.cs.msu.ru(1) 0.384710
+min - polus-c4-ib.bmc.hpc.cs.msu.ru(1) 0.384710; max - polus-c4-ib.bmc.hpc.cs.msu.ru(1) 0.384710; mid - 0.384710
