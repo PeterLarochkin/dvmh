@@ -4,9 +4,9 @@
 #include <math.h>
 #include <time.h>
 
-#define M (500)
-#define N (1000)
-#define epsilon (0.000001)
+#define M (16000)
+#define N (16000)
+#define epsilon (0.0000001)
 #define A1 (0.0)
 #define A2 (4.0)
 #define B1 (0.0)
@@ -159,7 +159,7 @@ int main() {
     }
 
     int count = 0;
-    while (squared_difference >= sq_eps && count < 10)
+    while (squared_difference >= sq_eps && count < 50)
     {
         #pragma dvm region
         {
@@ -370,7 +370,7 @@ int main() {
         double squared_difference = sum_;
 
         fflush(NULL);
-        if (count % 10 == 0) {
+        if (count % 1 == 0) {
             printf("n:%d, diff:%.10f\n", count, sqrt(squared_difference));
         }
         count++;
