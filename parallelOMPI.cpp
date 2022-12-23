@@ -69,17 +69,17 @@ void partitioningDomain(size_t M, size_t N, MPI_Comm *Comm, int rank, int size, 
     MPI_Comm_size(MPI_COMM_WORLD, &size);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
-    if ((power = log2_(size)) <0) {
-    if (rank == 0)
-        printf("error");
-    MPI_Finalize();
-    } 
+    if (size == 20) {
+        dims[0] = 5;
+        dims[1] = 4;
+    } else if (size == 40) {
+        dims[0] = 8;
+        dims[1] = 5;
+    } else {
+        MPI_Finalize();
+        exit(1);
+    }
     
-    py = split(M, N, power);
-    px = power - py;
-    
-    dims[0] = pow(2, px); 
-    dims[1] = pow(2, py);
     
     int m = M / dims[0]; 
     int n = N / dims[1];
@@ -669,7 +669,7 @@ void getAnalyticalSolution(double** whatWriteTo, double h1, double h2, Info_t* i
     }
 }
 
-void solving (double h1, double h2, double epsilon, double A1, double A2, double B1, double B2, int M, int N, Info_t* info, MPI_Comm *Comm, int size, double time_seq) {
+void solving (double h1, double h2, double epsilon, double A1, double A2, double B1, double B2, int M, int N, Info_t* info, MPI_Comm *Comm, int size) {
     double start_time = MPI_Wtime();
     int m = info->m;
     int n = info->n;
@@ -728,7 +728,7 @@ void solving (double h1, double h2, double epsilon, double A1, double A2, double
     double *recv_right_column = (double*) malloc(n * sizeof(double));
     
     int count = 0;
-    while (difference_global >= epsilon)
+    while (difference_global >= epsilon && count < 50)
     {
         
         #pragma omp parallel for default(shared) private(i, j) schedule(dynamic)
@@ -758,6 +758,9 @@ void solving (double h1, double h2, double epsilon, double A1, double A2, double
         minus(omega, tau_r, omega_next, M, N, info);
         difference_local = sqrt(scalarProduct(tau_r, tau_r, M, N, h1, h2, info, Comm));
         MPI_Allreduce(&difference_local, &difference_global, 1, MPI_DOUBLE, MPI_MAX, *Comm); 
+        if (rank == 0 && count % 1 == 0) {
+            printf("n: %d, rank: %d, norm: %.10f, eps:%.8f\n", count, rank, difference_global, epsilon);
+        }
         count++;
 
     }
@@ -769,25 +772,20 @@ void solving (double h1, double h2, double epsilon, double A1, double A2, double
     minus(solution, omega_next, solution, M, N, info);
     double norm = getMaxNorm(solution, M, N, h1, h2, info, Comm);
     MPI_Allreduce(&local_time_diff, &global_time_diff, 1, MPI_DOUBLE, MPI_MAX, *Comm);
-    double boost = time_seq/global_time_diff;
     // return;
     if (info->rank == 0) {
-        printf("size ,  M , N   , time        , boost      , max_diff\n");
-        printf("%d   &  %d \\times %d & %.10f & %.10f & %.10f\n", info->size, M, N, global_time_diff, boost ,  norm);
+        printf("size ,  M , N   , time    , diff_u_w,  eps\n");
+        printf("%d, %d, %d, %.5f, %.10f, %.8f\n", info->size, M, N, global_time_diff, norm, epsilon);
     }
     
 }
 
 
 int main(int argc, char** argv) {
-    if (argc < 5) {
-      fprintf(stderr, "Put args!\n");
-      return 1;
-    }
-    const size_t M = atoi(argv[1]);
-    const size_t N = atoi(argv[2]);
-    const size_t time_seq = atof(argv[3]);
-    double epsilon = atof(argv[4]);    
+    const size_t M = 16000;
+    const size_t N = 16000;
+    
+    double epsilon = 0.00000001;    
     
     double A1 = 0.0;
     double A2 = 4.0;
@@ -803,7 +801,7 @@ int main(int argc, char** argv) {
     int rank, size;
     partitioningDomain(M, N, &Comm, rank, size, &info);
     
-    solving(h1, h2, epsilon, A1, A2, B1, B2, M, N, &info, &Comm, size, time_seq);
+    solving(h1, h2, epsilon, A1, A2, B1, B2, M, N, &info, &Comm, size);
     
     MPI_Finalize();
 }
