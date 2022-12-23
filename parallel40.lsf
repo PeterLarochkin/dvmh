@@ -1,0 +1,6 @@
+#BSUB -x
+#BSUB -n 40 -q normal
+#BSUB -W 00:30
+#BSUB -o "p40_16kx16k.out"
+#BSUB -e "p40_16kx16k.err"
+mpiexec ./parallel.o
