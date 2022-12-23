@@ -692,7 +692,7 @@ void solving (double h1, double h2, double epsilon, double A1, double A2, double
     double *recv_right_column = (double*) malloc(n * sizeof(double));
     
     int count = 0;
-    while (difference_global >= epsilon && count < 20)
+    while (difference_global >= epsilon && count < 50)
     {
         
         for (size_t i = 1; i <= m; ++i) {
@@ -723,7 +723,7 @@ void solving (double h1, double h2, double epsilon, double A1, double A2, double
         difference_local = sqrt(scalarProduct(tau_r, tau_r, M, N, h1, h2, info, Comm));
         MPI_Allreduce(&difference_local, &difference_global, 1, MPI_DOUBLE, MPI_MAX, *Comm);
         if (rank == 0 && count % 1 == 0) {
-            printf("n: %d, rank: %d, norm: %.10f, eps:%.7f\n", count, rank, difference_global, epsilon);
+            printf("n: %d, rank: %d, norm: %.10f, eps:%.8f\n", count, rank, difference_global, epsilon);
         }
         count++;
 
@@ -740,7 +740,7 @@ void solving (double h1, double h2, double epsilon, double A1, double A2, double
     // return;
     if (info->rank == 0) {
         printf("size ,  M , N   , time    , diff_u_w,  eps\n");
-        printf("%d, %d, %d, %.5f, %.10f, %.7f\n", info->size, M, N, global_time_diff, norm, epsilon);
+        printf("%d, %d, %d, %.5f, %.10f, %.8f\n", info->size, M, N, global_time_diff, norm, epsilon);
     }
     
 }
