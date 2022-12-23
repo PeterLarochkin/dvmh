@@ -750,7 +750,7 @@ int main(int argc, char** argv) {
     const size_t M = 16000;
     const size_t N = 16000;
     
-    double epsilon = 16000;    
+    double epsilon = 0.000001;    
     
     double A1 = 0.0;
     double A2 = 4.0;
