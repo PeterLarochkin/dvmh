@@ -722,7 +722,7 @@ void solving (double h1, double h2, double epsilon, double A1, double A2, double
         difference_local = sqrt(scalarProduct(tau_r, tau_r, M, N, h1, h2, info, Comm));
         MPI_Allreduce(&difference_local, &difference_global, 1, MPI_DOUBLE, MPI_MAX, *Comm);
         if (rank == 0) {
-            printf("n: %d, norm: %.10f", count, difference_global);
+            printf("rank: %d, n: %d, norm: %.10f\n", rank, count, difference_global);
         }
         count++;
 
