@@ -1,5 +1,5 @@
 #BSUB -x
-#BSUB -n 16 -q normal
+#BSUB -n 20 -q normal
 #BSUB -W 00:30
 #BSUB -o "p20_16kx16k.out"
 #BSUB -e "p20_16kx16k.err"
